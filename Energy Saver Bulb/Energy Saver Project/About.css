@@ -1,0 +1,46 @@
+body::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.712);
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 303%;
+    width: 100%;
+}
+
+body {
+    background-image: url("https://img.freepik.com/premium-photo/energy-saving-bulbs-mint-background-top-view_185193-58921.jpg");
+    background-size: 100%;
+}
+
+.about-heading {
+    color: palegreen;
+    font-size: 2.5em;
+    margin: 0;
+    margin-left: 20px;
+}
+
+.about-para {
+    width: 70%;
+    background-color: rgb(147, 234, 107);
+    font-size: 1.5em;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width:850px) {
+    body::before {
+        height: 400%;
+    }
+}
+@media screen and (max-width:500px) {
+    body::before {
+        height: 550%;
+    }
+}

@@ -1,0 +1,146 @@
+#footer {
+    width: 95%;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+#footer-icon-div {
+    width: 25%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-icons {
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.footer-icons:hover {
+    color: palegreen;
+}
+
+#footer-para {
+    width: 80%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 10px auto;
+}
+
+#footer-search-div {
+    width: 70%;
+    color: white;
+    background-color: rgb(75, 73, 73);
+    padding: 50px;
+    margin: 0 auto;
+}
+
+#search-div-para {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#footer-sign-up-input {
+    width: 30%;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    margin-left: 200px;
+}
+
+#footer-signup-btn {
+    border: none;
+    padding: 10px 25px;
+    background-color: rgb(64, 243, 159);
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+#footer-signup-btn:hover {
+    background-color: rgb(19, 238, 136);
+}
+
+#footer-last-para {
+    width: 50%;
+    margin: 10px auto;
+}
+
+@media screen and (max-width:850px) {
+    #footer {
+        width: 100%;
+    }
+
+    #footer-icon-div {
+        width: 50%;
+    }
+
+    #footer-para {
+        width: 100%;
+    }
+
+    #footer-search-div {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #search-div-para {
+        width: 100%;
+        text-align: center;
+    }
+
+    #footer-sign-up-input {
+        width: 50%;
+        margin-left: 100px;
+    }
+
+    #footer-last-para {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #footer {
+        width: 100%;
+    }
+
+    #footer-icon-div {
+        width: 80%;
+    }
+
+    #footer-para {
+        width: 100%;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    #footer-search-div {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #search-div-para {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    #footer-sign-up-input {
+        width: 60%;
+        margin-left: 0px;
+    }
+
+    #footer-last-para {
+        width: 100%;
+    }
+}

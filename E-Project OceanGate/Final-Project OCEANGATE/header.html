@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="header.css">
+  <title>Header Of OceanGate</title>
+  <style>
+    button a {
+      color: white;
+      text-decoration: none;
+    }
+    .searchbar select{
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <a href="project/Lexar/usbC.html"></a> -->
+  <header>
+    <!-- First Navbar -->
+    <div class="top-nav">
+      <div class="contact-info">
+        <span><i class="fas fa-map-marker-alt"></i> Address: 123 Ocean St.</span>
+        <span><i class="fas fa-envelope"></i> Email: info@oceangate.com</span>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Second Navbar -->
+    <div class="main-nav">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Oceangate Logo" width="130"></a>
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a>
+          <ul>
+            <li>
+              <a href="#">SSD</a>
+              <ul class="sublistitems">
+                <li><a href="ssds/sandssd.html">SANDISK</a></li>
+                <li><a href="#">SAMSUNG</a></li>
+                <li><a href="#">INTEL</a></li>
+                <li><a href="#">KINGSTON</a></li>
+                <li><a href="#">WESTERN DIGITAL</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">USB Flash</a>
+              <ul class="sublistitems">
+                <li><a href="#">KINGSTON</a></li>
+                <li><a href="#">LEXAR</a></li>
+                <li><a href="#">SAMSUNG</a></li>
+                <li><a href="#">SANDISK</a></li>
+                <li><a href="#">TRANSCEND</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Memory Card</a>
+              <ul class="sublistitems">
+                <li><a href="#">SANDISK</a></li>
+                <li><a href="#">SAMSUNG</a></li>
+                <li><a href="#">SONY</a></li>
+                <li><a href="#">LEXAR</a></li>
+                <li><a href="#">KINGSTON</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Accessories</a>
+              <ul class="sublistitems">
+                <li><a href="#">Wireless Mouse</a></li>
+                <li><a href="#">Charger</a></li>
+                <li><a href="#">Adoptar</a></li>
+                <li><a href="#">Power Bank</a></li>
+                <li><a href="#">Earbuds</a></li>
+                <li><a href="#">Wireless Charger</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="search-bar">
+        <!-- <input type="text" placeholder="Search Products..."> -->
+        <select name="" id="it1">
+          <option value="">Search</option>
+          <option value="">SSD</option>
+          <option value="">USB</option>
+          <option value="">SD Card</option>
+          <option value="">Accessories</option>
+        </select>
+        <button onclick="item1()"><i class="fas fa-search"></i></button>
+        <!-- <a href="phone aceeserioessandsisk/mancard.html"></a> -->
+      </div>
+    </div>
+  </header>
+
+  <script>
+    // JavaScript Document
+    function item1() {
+      var a = document.getElementById('it1').selectedIndex;
+      var links = document.getElementById('searchproducts');
+      if (a == "") {
+        alert("Please Select some same products");
+
+      }
+      else if (a == 1) {
+        window.location.href="memory-Cards/sandmcard.html";
+      }
+      else if (a == 2) {
+        window.location.href="ssds/sandssd.html";
+      }
+
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+    <style>
+        body {
+            padding: 0px 20px;
+        }
+
+        #main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .color-div {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        #btn-div {
+            width: 35%;
+        }
+
+        .btn {
+            padding: 10px 30px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin-top: 70px;
+        }
+
+        #right-btn {
+            margin-left: 100px;
+        }
+
+        #color-code {
+            width: auto;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 40px;
+            text-align: center;
+        }
+/* Breakpoint: 766px to 1000px */
+    @media (min-width: 766px) and (max-width: 1000px) {
+        #main {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .color-div {
+            width: 80%;
+            height: 250px;
+        }
+
+        #btn-div {
+            width: 80%;
+        }
+
+        .btn {
+            font-size: 15px;
+        }
+    }
+
+    /* Tablets and below */
+    @media (max-width: 768px) {
+        #main {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .color-div {
+            width: 90%;
+            height: 250px;
+        }
+
+        #btn-div {
+            width: 90%;
+        }
+
+        .btn {
+            font-size: 15px;
+        }
+
+        #color-code {
+            font-size: 13px;
+        }
+    }
+
+    /* Small devices */
+    @media (max-width: 480px) {
+        .color-div {
+            height: 200px;
+        }
+
+        .btn {
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+
+        #color-code {
+            font-size: 12px;
+            padding: 8px;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="color-div" id="left-div"></div>
+        <div id="btn-div">
+            <button class="btn" id="left-btn" onclick="leftcolor()">left-color</button>
+            <button class="btn" id="right-btn" onclick="rightcolor()">right-color</button>
+            <div id="color-code">background-image:linear-gradient(<span id="leftspan">#ff0000</span> <span id="rightspan">#0000ff</span>)</div>
+        </div>
+        <div class="color-div" id="right-div"></div>
+    </div>
+
+
+    <script>
+        let leftbtncolor, rightbtncolor, leftdiv, rightdiv, leftbtn, rightbtn, codediv, randomColor ,leftspan,rightspan;
+        leftbtncolor = "#ff0000";
+        rightbtncolor = "#0000ff";
+        leftbtn = document.getElementById("left-btn").innerHTML = leftbtncolor;
+        rightbtn = document.getElementById("right-btn").innerHTML = rightbtncolor;
+
+        function colorGenerator() {
+            let randomColors = "0123456789abcdef";
+            let color = "#";
+            let randomcolor
+            for (let i = 1; i <= 6; i++) {
+                randomcolor = Math.floor(Math.random() * 16);
+                color = color + randomColors[randomcolor];
+            }
+            console.log(color);
+            return color;
+        }
+
+        function leftcolor() {
+            leftbtn = document.getElementById("left-btn").innerHTML = colorGenerator();
+            leftdiv = document.getElementById("left-div");
+            leftdiv.style.backgroundColor = leftbtn;
+            codediv = document.getElementById("color-code");
+            codediv.style.backgroundImage = `linear-gradient(to right, ${leftbtn}, ${rightbtn})`;
+            codediv.innerHTML = `background-image:linear-gradient(${leftbtn},${rightbtn})`;
+            document.getElementById("left-btn").style.backgroundColor = leftbtn;
+        }
+        function rightcolor() {
+            rightbtn = document.getElementById("right-btn").innerHTML = colorGenerator();
+            rightdiv = document.getElementById("right-div");
+            rightdiv.style.backgroundColor = rightbtn;
+            codediv = document.getElementById("color-code");
+            codediv.style.backgroundImage = `linear-gradient(to right,${leftbtn},${rightbtn})`;
+            codediv.innerHTML = `background-image:linear-gradient(${leftbtn},${rightbtn})`;
+            document.getElementById("right-btn").style.backgroundColor = rightbtn;
+        }
+    </script>
+</body>
+
+</html>

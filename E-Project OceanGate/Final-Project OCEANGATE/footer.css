@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  Roboto, sans-serif;
+}
+footer {
+    width: 100%;
+    background-color: #4891dac3;
+    color: white;
+}
+
+.ft1div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+}
+
+.ft1div p {
+    padding-top: 10px;
+
+}
+
+.ft1div p a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 6px;
+}
+
+.ft1div p a:hover {
+    text-decoration: underline;
+}
+
+.ftimgdiv {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ftimgdiv a img {
+    width: 100%;
+}
+.ftimgdiv a{
+    width:30% ;
+}
+
+.ftmaindiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.ftsubdivs {
+    width: 24%;
+
+}
+
+.ftsubdivs p {
+    font-size: 20px;
+}
+
+.ftsubdivs a {
+    color: rgba(255, 255, 255, 0.704);
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.ftsubdivs a:hover {
+    color: #414764;
+}
+
+.ftsuppdivp {
+    margin: 0;
+    margin-top: 50px !important;
+}
+
+.ftlogodiv {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.ftlogodiv i {
+    font-size: 25px;
+}
+
+.ftlogodiv a:hover i {
+    color: #414764;
+}
+
+.ftlp p {
+    background-color: #4a84bd;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.ftlogocol {
+    color: white !important;
+}

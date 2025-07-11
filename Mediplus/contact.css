@@ -1,0 +1,166 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    line-height: 24px;
+}
+
+.footlinksdiv a {
+    margin-bottom: 20px;
+}
+
+.mainbgcontdiv {
+    width: 100%;
+    background-image: url(img/fun-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.maincontdiv {
+    width: 100%;
+    background-color: #055db4bf;
+    text-align: center;
+    color: white;
+    padding: 115px;
+}
+
+.maincontdiv h2 {
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+.maincontdiv a {
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+
+.maincontdiv a:hover {
+    color: #383737;
+}
+
+.maincontdiv span {
+    display: inline;
+}
+
+.maincontdiv i {
+    display: inline;
+    font-size: 10px;
+    margin: 0 10px;
+}
+
+.maincontformdiv {
+    width: 83%;
+    margin: 30px auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 4px 4px rgb(185, 183, 183);
+    border-radius: 5px;
+}
+
+.maincontformdiv>div {
+    width: 48%;
+}
+
+.contformdiv {
+    padding: 20px;
+}
+
+.contformdiv h2 {
+    font-size: 32px;
+}
+
+.contformdiv span {
+    color: #1a76d1;
+    font-weight: bolder;
+}
+
+.contformdiv p {
+    color: #333333;
+    margin-top: 10px;
+}
+
+.contformdiv div {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contformdiv div input {
+    width: 48%;
+    border: 1px solid rgb(228, 226, 226);
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.contformdiv div textarea {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid rgb(228, 226, 226);
+}
+
+.contformdiv div button {
+    width: 100%;
+    background-color: #1a76d1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.contformdiv div button:hover {
+    background-color: #2C2D3F;
+    transition: all 1s;
+}
+
+.contformdiv div p {
+    width: 95%;
+    padding-top: 4px;
+    color: #757575;
+}
+
+.mainlocdiv {
+    width: 100%;
+    padding: 30px 110px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.mainlocdiv>div {
+    width: 30%;
+    padding: 40px 52px;
+    background-color: #1a76d1;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-radius: 10px;
+}
+
+.mainlocdiv>div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 10px #80a9d3;
+    transition: all 0.5s;
+}
+
+.mainlocdiv>div i {
+    width: auto;
+    font-size: 35px;
+    padding-top: 5px;
+    transform: rotateZ(20deg);
+
+}
+
+.mainlocdiv>div div {
+    width: 80%;
+}
+
+.mainlocdiv>div div p {
+    margin-top: 8px;
+}

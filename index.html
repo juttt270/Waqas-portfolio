@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: serif;
+            text-align: center;
+        }
+
+        .header {
+            width: 100%;
+            background: #eee;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            z-index: 5;
+        }
+
+        .header h1 {
+            flex: 1 1 100%;
+            text-align: left;
+        }
+
+        .header ul {
+            display: flex;
+            list-style: none;
+            flex: 1 1 100%;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+
+        .header ul li a {
+            color: #3333339e;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .header ul li a:hover {
+            color: #333;
+        }
+
+        .cont-icon {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex: 1 1 100%;
+            margin-top: 10px;
+        }
+
+        .cont-icon a {
+            color: inherit;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #dad9d9, #eee);
+            color: rgb(101, 101, 101);
+            padding:30px 50px;
+            margin-top: 81px;
+        }
+        .hero h1{
+            margin: 15px auto;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            animation: bounce 10s infinite;
+        }
+
+        .about,
+        .contact,
+        .portfolio {
+            max-width: 100%;
+            padding: 50px 20px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.611);
+        }
+
+        .about>p {
+            margin: 20px auto;
+        }
+
+        h2,
+        h3 {
+            margin: 20px auto;
+            width: max-content;
+            padding: 5px 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 1px #ffffff;
+        }
+
+        h4 {
+            margin: 10px auto;
+
+        }
+
+        .mainaboutdiv,
+        .mainport {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .aboutsubdiv,
+        .portsubdivs {
+            width: 100%;
+            max-width: 300px;
+            padding: 20px 10px;
+            box-shadow: 0px 0px 10px #bababa;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .aboutsubdiv button,
+        .portsubdivs button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+        .portimg {
+            width: 100%;
+            height: 180px;
+            /* object-fit: cover; */
+            border-radius: 8px 8px 0 0;
+        }
+
+        #cva {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #eee;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+@media (max-width: 700px) {
+  .hero{
+                margin-top: 145px;
+            }.portfolio h3{
+                width: auto;
+            }
+            .header ul{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .cont-icon{
+                justify-content: start;
+            }
+}
+
+        @media (min-width: 600px) {
+            .header h1 {
+                flex: 1;
+            }
+
+            .header ul {
+                flex: 2;
+            }
+
+            .cont-icon {
+                flex: 1;
+                justify-content: flex-end;
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <h1>My Portfolio</h1>
+        <!-- <nav> -->
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">My Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        <div class="cont-icon">
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/share/1GEH33gkdf/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/waqas.munir.3114/profilecard/?igsh=ZWpqdjZ4MzVibWNs"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a
+                href="https://www.linkedin.com/in/waqas-kamboh-435b5a321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <img src="images/myimag.png.jpg" alt="Your Name" class="profile-img">
+        <h1>Waqas Munir</h1>
+        <p>Web Developer | Designer | Freelancer</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer specializing in creating amazing web experiences.</p>
+        <div class="mainaboutdiv">
+            <div class="aboutsubdiv">
+                <h3>Introduction</h3>
+                <p>My name is Waqas Munir.My father name is Muhammad Munir.I am basically from Fort Abbas Punjab
+                    Pakistan.I have passed my matriculation Study from Al-Umer Public School Fort Abbas and intermediate
+                    from Government Graduate College Foer Abbas.Now i want to become a full stack developer and for
+                    achieve this continue Study in Aptech Learning Karachi.</p>
+                <button><a href="#">See More</a>
+                </button>
+            </div>
+            <div class="aboutsubdiv">
+                <h3>Development Journey</h3>
+                <p>The journey of web development is a continuous learning experience, evolving with new technologies
+                    and trends. It starts with mastering the basics—HTML, CSS, and JavaScript—before diving into
+                    frameworks, libraries, and backend technologies. Along the way, developers encounter challenges like
+                    debugging, optimizing performance, and ensuring responsive design. With persistence and curiosity,
+                    they build projects, collaborate with others, and refine their skills.</p>
+                <button><a href="#">See More</a>
+                </button>
+            </div>
+            <div class="aboutsubdiv">
+                <h3>My Future Goals</h3>
+                <p>My future aim is to become a skilled full-stack developer, mastering both frontend and backend
+                    technologies to build dynamic and efficient web applications. I plan to deepen my knowledge of
+                    frameworks like React and Node.js, work with databases, and understand deployment processes.My goal
+                    is to stay updated with emerging technologies and become a versatile developer capable of handling
+                    all aspects of web development.</p>
+                <button><a href="#">See More</a>
+                </button>
+            </div>
+        </div>
+        <a id="cva" href="cv.docx">Download CV</a>
+    </section>
+
+    <!-- My Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2>My Portfolio</h2>
+        <h3>Web Pages And Start Developer Journey With This Work</h3>
+        <div class="mainport">
+            <div class="portsubdivs">
+                <a href="upwork/index.html" class="porta"><img src="images/upwork.png" alt="" class="portimg"></a>
+                <h4>Upwork Home Page</h4>
+                <button><a href="upwork/index.html">Veiw Page</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="Glory/home.html" class="porta"><img src="images/glory.png" alt="" class="portimg"></a>
+                <h4>Home Page Of Glory Salon</h4>
+                <button><a href="Glory/home.html">Veiw Page</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="time-watch/index.html" class="porta"><img src="images/watch.png" alt="" class="portimg"></a>
+                <h4>Time-Watch</h4>
+                <button><a href="time-watch/index.html">Veiw Watch</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="Adchitects/service.html" class="porta"><img src="images/adhitects.png" alt=""
+                        class="portimg"></a>
+                <h4>Service Page Of Adchitects</h4>
+                <button><a href="Adchitects/service.html">Veiw Page</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="Calculator/index.html" class="porta"><img src="images/calculator.png" alt=""
+                        class="portimg"></a>
+                <h4>Calculator</h4>
+                <button><a href="Calculator/index.html">Veiw Calculator</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="Color-generator/index.html" class="porta"><img src="images/color-genrator.png" alt=""
+                        class="portimg"></a>
+                <h4>Color-Generator Customly</h4>
+                <button><a href="Color-generator/index.html">Veiw Project</a></button>
+            </div>
+        </div>
+        <h3>Finally,These Are Complete And Well Designing Projects</h3>
+        <div class="mainport">
+            <div class="portsubdivs">
+                <a href="E-Project OceanGate/Final-Project OCEANGATE/index.html" class="porta"><img
+                        src="images/oceangate.png" alt="" class="portimg"></a>
+                <h4>OceanGate Project</h4>
+                <button><a href="E-Project OceanGate/Final-Project OCEANGATE/index.html">Veiw Website</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="Mediplus/index.html" class="porta"><img src="images/mediplus.png" alt="" class="portimg"></a>
+                <h4>Mediplus Project</h4>
+                <button><a href="Mediplus/index.html">Veiw Website</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="fruits-Vegitables Projuct/index.html" class="porta"><img src="images/fruitvegetable.png" alt=""
+                        class="portimg"></a>
+                <h4>Fruit-Vegetables Project</h4>
+                <button><a href="fruits-Vegitables Projuct/index.html">Veiw Website</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="Themewagon/index.html" class="porta"><img src="images/themewagon.png" alt=""
+                        class="portimg"></a>
+                <h4>ThemeWagon Project</h4>
+                <button><a href="Themewagon/index.html">Veiw Website</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="game/home.html" class="porta"><img src="images/game.png" alt="" class="portimg"></a>
+                <h4>Tic Tac Game</h4>
+                <button><a href="game/home.html">Veiw Website</a></button>
+            </div>
+            <div class="portsubdivs">
+                <a href="Energy Saver Bulb/Energy Saver Project/index.html" class="porta"><img
+                        src="images/energysaver.png" alt="" class="portimg"></a>
+                <h4>Energy Saver Project</h4>
+                <button><a href="Energy Saver Bulb/Energy Saver Project/index.html">Veiw Website</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:your@email.com">waqaskamboh269@email.com</a></p>
+        <p>Tel: <a href="#">+92-300-1234560</a></p>
+        <p>linkedIn: <a
+                href="https://www.linkedin.com/in/waqas-kamboh-435b5a321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Waqas
+                Munir</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2025 Your Name. All Rights Reserved.
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const heroText = document.querySelector(".hero h1");
+            heroText.style.opacity = "0";
+            setTimeout(() => {
+                heroText.style.transition = "opacity 2s";
+                heroText.style.opacity = "1";
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>

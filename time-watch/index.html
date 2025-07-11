@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch By JavaScript</title>
+    <style>
+        #watch-div {
+            width: 350px;
+            color: rgb(5, 9, 247);
+            border: 1px solid black;
+            border-radius: 10px;
+            background-color: rgb(234, 236, 236);
+            text-align: center;
+            padding: 10px;
+            margin: 200px auto;
+            font-weight: 1000;
+            font-size: 50px;
+            box-shadow: 1px 1px 20px rgb(85, 89, 150);
+        }
+        .watch {
+            display: inline-block;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Make Watch By JavaScript</h1>
+    <div id="watch-div">
+        <p class="watch" id="hours">00</p>:
+        <p class="watch" id="minutes">00</p>:
+        <p class="watch" id="seconds">00</p>
+        <p class="watch" id="time">AM</p>
+    </div>
+    <script>
+        let seconds, minutes, hours, secoutput, minoutput, horoutput;
+        seconds = 1;
+        minutes = 1;
+        hour = 1;
+        let time = document.getElementById("time");
+        setInterval(() => {
+            let secresult = seconds++;
+            let minresult;
+            if (secresult == 60) {
+                secresult = 0;
+                seconds = 1;
+                minresult = minutes++;
+            }
+            secoutput = document.getElementById("seconds").innerHTML = secresult;
+            if (secresult <= 9) {
+                secoutput  = document.getElementById("seconds").innerHTML = "0" + secresult;
+            }
+            if (secresult == 0) {
+                if (minresult == 60) {
+                    minresult = 0;
+                    minutes = 1;
+                }
+                minoutput = document.getElementById("minutes").innerHTML = minresult;
+                if (minresult <= 9) {
+                    minoutput = document.getElementById("minutes").innerHTML = "0" + minresult;
+                }
+            }
+            if (minresult == 0) {
+                let horresult = hour++;
+                if (horresult == 12) {
+                    hour = 1;
+                }
+                horoutput = document.getElementById("hours").innerHTML = horresult;
+                if (minresult <= 9) {
+                    horoutput = document.getElementById("hours").innerHTML = "0" + horresult;
+                }
+                if (horoutput == 12) {
+                    if (time.innerHTML == "AM") {
+                        time.innerHTML = "PM"
+                    }
+                    else {
+                        time.innerHTML = "AM"
+                    }
+                }
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

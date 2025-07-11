@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../variable.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../sidebar.css">
+    <link rel="stylesheet" href="sandssd.css">
+    <title>SanDisk Internal SSDs</title>
+</head>
+
+<body>
+      <!-- header  -->
+      <header>
+        <!-- First Navbar -->
+        <div class="top-nav">
+            <div class="contact-info">
+                <span><i class="fas fa-map-marker-alt"></i> Address: 123 Ocean St.</span>
+                <a href="mailto:info@oceangate.com">
+                <span><i class="fas fa-envelope"></i> Email: info@oceangate.com</span></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1GEH33gkdf/ "><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/waqas.munir.3114/profilecard/?igsh=ZWpqdjZ4MzVibWNs "><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/qr/COGAK4GUYIFGM1"><i class="fab fa-whatsapp"></i></a>
+                <a href="http://www.youtube.com/@waqas_munir-px4df"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!-- Second Navbar -->
+        <div class="main-nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../logo.png" alt="Oceangate Logo" width="130"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Products</a>
+                    <ul>
+                        <li>
+                            <a href="#">SSD</a>
+                            <ul class="sublistitems">
+                                <li><a href="../ssds/sandssd.html">SANDISK</a></li>
+                                <li><a href="../sumsung project/sumsingman.html">SAMSUNG</a></li>
+                                <li><a href="../intel project/intel man .html">INTEL</a></li>
+                                <li><a href="../kinstonproject/kingstonman.html">KINGSTON</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">USB Flash</a>
+                            <ul class="sublistitems">
+                                <li><a href="../../kingston usb/sandssd.html">KINGSTON</a></li>
+                                <li><a href="../../lexar usb/sandssd.html">LEXAR</a></li>
+                                <li><a href="../../samsung usb/sandssd.html">SAMSUNG</a></li>
+                                <li><a href="../../sandisk usb/usbA.html">SANDISK</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Memory Card</a>
+                            <ul class="sublistitems">
+                                <li><a href="../../memory-Cards/sandmcard.html">SANDISK</a></li>
+                                <li><a href="../../sumsung-SD-cards/summainSD-card.html">SAMSUNG</a></li>
+                                <li><a href="../../Lexar SD cards/lexarSDcardmain.html">LEXAR</a></li>
+                                <li><a href="../../kingston-SD cards/kingSDmain.html">KINGSTON</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                            <ul class="sublistitems">
+                                <li><a href="../adpater of sandisk/manadeptercards.html">Adapters</a></li>
+                                <li><a href="../doks sandisk/docsman.html">Docks & Modules</a></li>
+                                <li><a href="../sumsing airburds/mancard.html">Earbuds</a></li>
+                                <li><a href="../card Reader/man accesories.html">Memory Card Readers</a></li>
+                                <li><a href="../phone aceeserioessandsisk/mancard.html">Phone Camera Accessories</a></li>
+                                <li><a href="../power bank of sumsing/mancard.html">Power Bank</a></li>
+                                <li><a href="../WIRELES MOIUSE SUMSING/mancard.html">Wireless Mouse</a></li>
+                                <li><a href="../wirless cahrger sandisk/mancard.html">Wireless Chargers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../aboutus.html">About Us</a></li>
+                <li><a href="../contactUs.html">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <select id="selectproduct">
+                    <option>Search</option>
+                    <option>SanDisk SSDs</option>
+                    <option>Sumsung SSDs</option>
+                    <option>Kingston SSDS</option>
+                    <option>Intel SSDs</option>
+                    <option>Sandisk SD Cards</option>
+                    <option>Sumsung SD Cards</option>
+                    <option>Kingston SD Cards</option>
+                    <option>Lexar SD Cards</option>
+                    <option>SanDisk USB Flash</option>
+                    <option>Sumsung USB Flash</option>
+                    <option>Kingston USB Flash</option>
+                    <option>Lexar USB Flash</option>
+                    <option>Adapters</option>
+                    <option>Docks & Modules</option>
+                    <option>Card Readers</option>
+                    <option>Wireless Mouse</option>
+                    <option>Phone Camera Accessories</option>
+                    <option>Power Bank</option>
+                    <option>Earbuds</option>
+                    <option>Wireless Chargers</option>
+                </select>
+                <button onclick="searchitems()"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- Main Section (Product Cards) -->
+    <section class="product-cards">
+        <div class="mainssdintrodiv">
+            <div class="ssdintrodiv">
+                <h1 class="h1">Lexar USB Flash</h1>
+                <p class="p">Store Your Unlimited Data.</p>
+            </div>
+        </div>
+        <h1 class="h1 ssdh1">Lexar USB Flash</h1>
+        <div class="maindiv">
+            <div class="sidebar">
+                <div class="stickydiv">
+                    <h3 class="h3">Shop USB</h3>
+                    <hr>
+                    <div class="filter">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="sandssd.html">Lexar USB</a></li>
+                            <li><a href="../sandisk usb/usbA.html">Sandisk USB</a></li>
+                            <li><a href="../samsung usb/sandssd.html">Samsung USB</a></li>
+                            <li><a href="../kingston usb/sandssd.html">Kingston USB</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter">
+                        <h4>Shop All Discounted</h4>
+                        <ul>
+                            <li><a href="#">Under $100</a></li>
+                            <li><a href="#">Under $200</a></li>
+                            <li><a href="#">Under $500</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter">
+                        <h4>Filter by</h4>
+                        <ul>
+                            <li><a href="#">Capacity Range</a></li>
+                            <li><a href="#">Brand</a></li>
+                            <li><a href="#">From Factory</a></li>
+                            <li><a href="#">Use Case</a></li>
+                            <li><a href="#">Connector Type</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter">
+                        <h4>Price Range</h4>
+                        <input type="range" min="0" max="2000" value="500" id="price-range">
+                        <span id="price-value">$0 - $500</span>
+                    </div>
+
+                    <div class="filter">
+                        <h4>Capacity Range</h4>
+                        <input type="range" min="0" max="4000" value="1000" id="capacity-range">
+                        <span id="capacity-value">0 GB - 1000 GB</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Product Cards -->
+            <div class="cardsdiv">
+                <!-- Card 1 -->
+                <a class="card " href="inside card .html">
+                    <div id="extremeprocard">
+                        <img src="images/first pic of card.jpg" id="compimg" alt="SanDisk Extreme Pro 1TB">
+                        <div class="card-body">
+                            <h3 id="comph2">Lexar® Professional Workflow SD/microSD UHS-II Card Reader</h3>
+                            <p id="compp1" class="price">Started at:$89.99</p>
+                            <p id="compp2" class="description">Ultimate performance for gamers, creative professionals.
+                            </p>
+                            <ul id="compul" class="specs">
+                                <li>Capacity: 1TB-8TB</li>
+                                <li>Read Speed: 3400MB/s</li>
+                                <li>Write Speed: 2800MB/s</li>
+                                <li>Form Factor: M.2 NVMe</li>
+                            </ul>
+                            <button id="compbtn" class="abtn" onclick="comp()">See More</button>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 2 -->
+                <a class="card" href="inside card2.html">
+                    <div>
+                        <img src="images/2nd pic of card.jpg" alt="SanDisk Ultra 500GB">
+                        <div class="card-body">
+                            <h3>Lexar® JumpDrive® P30 USB 3.2 Gen 1 Flash Drive</h3>
+                            <p class="price">Started at: $119.99</p>
+                            <p class="description">Reliable performance for everyday computing tasks with 3D NAND.</p>
+                            <ul class="specs">
+                                <li>Capacity: 1Tb-8TB</li>
+                                <li>Read Speed: 560MB/s</li>
+                                <li>Write Speed: 530MB/s</li>
+                                <li>Form Factor: 2.5" SATA III</li>
+                            </ul>
+                            <button class="abtn">See More</button>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 3 -->
+                <a class="card " href="inside card3 .html">
+                    <div>
+                        <img src="images/3rd pic of .jpg" alt="SanDisk SSD Plus 240GB">
+                        <div class="card-body">
+                            <h3>Lexar® JumpDrive® Dual Drive E32c USB 3.2 Gen 1 Type-C™</h3>
+                            <p class="price">Started at: $44.99</p>
+                            <p class="description">Affordable SSD with great speed for everyday computing.</p>
+                            <ul class="specs">
+                                <li>Capacity: 240GB</li>
+                                <li>Read Speed: 535MB/s</li>
+                                <li>Write Speed: 445MB/s</li>
+                                <li>Form Factor: 2.5" SATA III</li>
+                            </ul>
+                            <button class="abtn">See More</button>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 4 -->
+                <a class="card " href="insidecaard4.html">
+                    <div>
+                        <img src="images/4THPIC OF card.jpg" alt="SanDisk Ultra 3D 1TB">
+                        <div class="card-body">
+                            <h2>Lexar® JumpDrive® M900 USB 3.2 Gen 1 Flash Drive</h2>
+                            <p class="price">Started at: $49.99</p>
+                            <p class="description">3D NAND for better performance, endurance, and power efficiency.</p>
+                            <ul class="specs">
+                                <li>Capacity: 1TB</li>
+                                <li>Read Speed: 560MB/s</li>
+                                <li>Write Speed: 530MB/s</li>
+                                <li>Form Factor: 2.5" SATA III</li>
+                            </ul>
+                            <button class="abtn">See More</button>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 5 -->
+                <a class="card" href="inside card5.html">
+                    <div>
+                        <img src="images/5th pic of card .jpg" alt="SanDisk Extreme 2TB">
+                        <div class="card-body">
+                            <h2>Lexar® JumpDrive® Fingerprint F35 PRO USB 3.2 Gen 1 Flash Drive &nbsp; &nbsp; GB</h2>
+                            <p class="price">Started at: $84.99</p>
+                            <p class="description">High-speed storage for gaming, video editing, and other demanding
+                                tasks.
+                            </p>
+                            <ul class="specs">
+                                <li>Capacity: 2TB</li>
+                                <li>Read Speed: 550MB/s</li>
+                                <li>Write Speed: 500MB/s</li>
+                                <li>Form Factor: 2.5" SATA III</li>
+                            </ul>
+                            <button class="abtn">See More</button>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 6 -->
+                <a class="card" href="inside cRD 6.HTML">
+                    <div>
+                        <img src="images/6th pic of card .jpg" alt="SanDisk Ultra 3D 2TB">
+                        <div class="card-body">
+                            <h2>Lexar® JumpDrive® S47 USB 3.2 Gen 1 Flash Drive</h2>
+                            <p class="price">Started at: $32.99</p>
+                            <p class="description">Enhanced performance and reliability with 3D NAND technology.</p>
+                            <ul class="specs">
+                                <li>Capacity: 2TB</li>
+                                <li>Read Speed: 560MB/s</li>
+                                <li>Write Speed: 530MB/s</li>
+                                <li>Form Factor: 2.5" SATA III</li>
+                            </ul>
+                            <button class="abtn">See More</button>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 7 -->
+                <a class="card" href="INSIDE CARD 7.HTML">
+                    <div>
+                        <img src="images/7th pic of card.jpg" alt="SanDisk SSD Plus 1TB">
+                        <div class="card-body">
+                            <h2>Lexar® JumpDrive® Dual Drive D400 USB 3.2 Gen 1 Type-C™</h2>
+                            <p class="price">Started at: $52.99</p>
+                            <p class="description">Affordable and reliable storage for every day.</p>
+                            <ul class="specs">
+                                <li>Capacity: 1TB</li>
+                                <li>Read Speed: 535MB/s</li>
+                                <li>Write Speed: 445MB/s</li>
+                                <li>Form Factor: 2.5" SATA III</li>
+                            </ul>
+                            <button class="abtn">See More</button>
+
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 8 -->
+                <a class="card" href="INSIDE CARD 8.HTML">
+                    <div>
+                        <img src="images/8th pic of card .jpg" alt="SanDisk Extreme Pro 2TB">
+                        <div class="card-body">
+                            <h2>Lexar® JumpDrive® M400 USB 3.2 Gen 1 Flash Drive</h2>
+                            <p class="price">Started at: $49.99</p>
+                            <p class="description">Premium performance with NVMe for high-end tasks.</p>
+                            <ul class="specs">
+                                <li>Capacity: 2TB</li>
+                                <li>Read Speed: 3400MB/s</li>
+                                <li>Write Speed: 2800MB/s</li>
+                                <li>Form Factor: M.2 NVMe</li>
+                            </ul>
+                            <button class="abtn">See More</button>
+                        </div>
+                    </div>
+                </a>
+                <!-- Card 9 -->
+                <a class="card" href="INSIDE CARD9.HTML">
+                    <div>
+                        <img src="images/9th pic of card.jpg" alt="SanDisk Ultra 500GB (M.2)">
+                        <div class="card-body">
+                            <h2>Lexar® JumpDrive® S80 USB 3.2 Gen 1 Flash Drive</h2>
+                            <p class="price">Started at: $149.99</p>
+                            <p class="description">M.2 SSD with fast speeds for optimal.</p>
+                            <ul class="specs">
+                                <li>Capacity: 500GB</li>
+                                <li>Read Speed: 500MB/s</li>
+                                <li>Write Speed: 450MB/s</li>
+                                <li>Form Factor: M.2 SATA</li>
+                            </ul>
+                            <button class="abtn ">See More</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <!-- Main Title -->
+            <h1>Why to Buy Direct</h1>
+            <!-- Description Text -->
+            <p class="description-text">
+                Authentic products, exclusive offers, and added benefits when you buy directly from the manufacturer.
+            </p>
+
+            <!-- Horizontal List of Sections -->
+            <div class="horizontal-list">
+                <!-- Section 1: Authentic Products -->
+                <div class="section-item">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <h4 class="section-title"> Authentic Products</h4>
+                    <p class="section-description">Manufacturer Guaranteed</p>
+                    <a href="#" class="section-link"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+                </div>
+                <!-- Section 2: Save 10% Off -->
+                <div class="section-item">
+                    <i class="fa-solid fa-tag"></i>
+                    <h4 class="section-title"> Save 10% Off</h4>
+                    <p class="section-description">Your first order*</p>
+                    <a href="../signup.html" class="section-link"><i class="fa-solid fa-arrow-right"></i> Sign Up</a>
+                </div>
+                <!-- Section 3: Member Perks -->
+                <div class="section-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h4 class="section-title"> Member Perks</h4>
+                    <p class="section-description">Get free shipping on eligible orders*</p>
+                    <a href="#" class="section-link"><i class="fa-solid fa-arrow-right"></i> Join Now</a>
+                </div>
+                <!-- Section 4: Data Recovery -->
+                <div class="section-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <h4 class="section-title">Data Recovery</h4>
+                    <p class="section-description">Added layer of protection*</p>
+                    <a href="#" class="section-link"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+                </div>
+                <!-- Section 5: Simple Returns -->
+                <div class="section-item">
+                    <i class="fa-solid fa-box"></i>
+                    <h4 class="section-title"> Simple Returns</h4>
+                    <p class="section-description">Free 30-Day Returns*</p>
+                    <a href="#" class="section-link"><i class="fa-solid fa-arrow-right"></i> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- footer  -->
+     <footer>
+        <div class="ft1div">
+            <div class="ftimgdiv">
+                <a href="../index.html"> <img src="../logo.png" alt=""></a>
+            </div>
+            <p>Country/Region: <a href="#">United Kingdom</a></p>
+        </div>
+        <div class="ftmaindiv">
+            <div class="ftshopdiv ftsubdivs">
+                <p>Shopping</p>
+                <a href="../ssds/sandssd.html">Shop SSDs</a>
+                <a href="../project/SanDisk/usbA.html">Shop USB Flash</a>
+                <a href="../memory-Cards/sandmcard.html">Shop Memory Cards</a>
+                <a href="../card Reader/man accesories.html">Other Accessories</a>
+                <a href="../sumsing airburds/mancard.html">EarBuds</a>
+                <a href="../power bank of sumsing/mancard.html">Power Bank</a>
+                <a href="../WIRELES MOIUSE SUMSING/mancard.html">Wireless Mouse</a>
+                <a href="../wirless cahrger sandisk/mancard.html">Wireless Chargers</a>
+            </div>
+            <div class="ftprogdiv ftsubdivs">
+                <p>Programs</p>
+                <a href="#">Business Account Benefits</a>
+                <a href="#">Data Recovery</a>
+                <a href="#">OceanGate Credit</a>
+                <a href="#">Pro Rewards</a>
+                <a href="#">Partner Programs</a>
+                <a href="#">Affiliate Programs</a>
+            </div>
+            <div class="ftcompdiv ftsubdivs">
+                <p>Company</p>
+                <a href="../aboutus.html">About Us</a>
+                <a href="#">My Account</a>
+                <a href="../signup.html">Sign Up for Email</a>
+                <a href="#">Leadership</a>
+                <a href="#">News & Events</a>
+                <a href="#">Privact Center</a>
+                <a href="#">Careers</a>
+                <a href="#">Office Locations</a>
+                <a href="../contactUs.html">Contact Us</a>
+            </div>
+            <div class="ftsuppdiv ftsubdivs">
+                <p>Support</p>
+                <a href="../contactUs.html">Get Help</a>
+                <a href="#">Resource Library</a>
+                <a href="#">Product Security</a>
+                <p class="ftsuppdivp">+44 8081896000</p>
+                <p style="padding: 0 !important;">Monday - Friday, 9:00 - 18:00 GMT</p>
+                <div class="ftlogodiv">
+                    <a class="ftlogocol" href="https://www.instagram.com/waqas.munir.3114/profilecard/?igsh=ZWpqdjZ4MzVibWNs"><i class="fab fa-instagram"></i></a>
+                    <a class="ftlogocol" href="https://www.linkedin.com/in/waqas-kamboh-435b5a321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class="fab fa-linkedin"></i></a>
+                    <a class="ftlogocol" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="ftlogocol" href="https://www.facebook.com/share/1GEH33gkdf/ "><i class="fab fa-facebook-f"></i></a>
+                    <a class="ftlogocol" href="http://www.youtube.com/@waqas_munir-px4df"><i class="fab fa-youtube"></i></a>
+                </div>
+                <a style="margin: 0;" href="#">
+                    <img width="30%" src="../images/ft-logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="ftlp">
+            <p>© 2024 OceanGate Corporation or its affiliates. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../searchproducts2.js"></script>
+</body>
+
+</html>

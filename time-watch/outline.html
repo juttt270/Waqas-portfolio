@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outline</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #inn {
+            width: 30%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 10px 20px;
+            color: gray;
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        #divi::after {
+            content: "How Are You";
+            color: white;
+            width: 100%;
+            height: 100%;
+            background-color: yellow;
+            display: block;
+            opacity: 0.4;
+            z-index: 2;
+        }
+
+        #star {
+            width: 50%;
+            height: 300px;
+            background-color: black;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="text" name="" id="inn" placeholder="click for check outline" onclick="inn()">
+    </div>
+
+    <div
+        style="background-color: gold; width: 100px; height: 100px; border-radius: 50%; padding: 20px; text-align: center;position: relative;">
+        <i style="font-size: 50px;display: block;margin-top: 20px;color: white;" class="fa-solid fa-car"></i>
+        <div
+            style="background-color: gold; position: absolute; bottom: -25px; left: 28px; width: 80px;height: 80px;clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);">
+        </div>
+    </div>
+    <div id="divi"
+        style="z-index: 1; width: 100%;height: 450px;margin-top: 30px; background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg);background-size: 100% 100%; background-position: center;">
+    </div>
+
+    <div id="star"></div>
+
+    <script>
+        function inn() {
+            let inn = document.getElementById("inn");
+            inn.style.outline = "green solid 3px";
+            inn.style.border = "none";
+        }
+    </script>
+</body>
+
+</html>

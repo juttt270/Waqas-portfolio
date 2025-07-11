@@ -1,0 +1,77 @@
+* {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    width: 40%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.main h1 {
+    color: #1a76d1;
+    text-shadow: 4px 4px 4px rgb(148, 141, 141);
+    font-size: 140px;
+}
+
+.main span {
+    color: #333333;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.main p {
+    color: #757575;
+    padding: 20px 15px;
+    font-size: 14px;
+}
+
+.main div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.main div input {
+    width: 70%;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+}
+
+.main div button {
+    width: 10%;
+    background-color: #1a76d1;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.main div button i {
+    color: white;
+    font-size: 20px;
+}
+
+.main div button:hover {
+    background-color: #2C2D3F;
+    transition: all 1s;
+}
+
+.footspan {
+    font-weight: 1000;
+}
+
+p {
+    line-height: 24px;
+}
+
+.footlinksdiv a {
+    margin-bottom: 20px;
+}

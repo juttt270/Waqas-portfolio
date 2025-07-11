@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.slideslefdiv {
+    position: absolute;
+    top: 50px;
+    right: 500px;
+    width: 30%;
+    color: white;
+}
+
+.slideh1 {
+    animation: fadeInUp 1s both 1s;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.slidea {
+    animation: fadeInUp 1s both 1s;
+    margin: 0 auto;
+    display: block;
+    width: 120px;
+    text-align: center;
+}
+
+.giftdiv {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #95b4d32c;
+}
+
+.giftdiv div {
+    width: 50%;
+}
+
+
+
+.giftp {
+    margin: 20px 0;
+}
+
+.giftdiv img {
+    width: 15%;
+    margin: 0 auto;
+}
+.addupbgdiv {
+    background-color: #95b4d36c;
+    background-image: url(images/card2.png);
+    background-position: right;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+
+.addupdiv {
+    padding: 100px 50px;
+    width: 57%;
+}
+
+.adduph1 {
+    font-size: 3rem;
+}
+
+.addupp {
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+.shopgiftmaindiv{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px;
+    margin-top: 50px;
+}
+.shopgiftdiv{
+    width:49.5%;
+    padding: 20px 40px;
+    background-color:#95b4d36c ;
+    border-radius: 5px;
+}
+.shopgiftdiv p{
+    margin: 20px 0;
+}
+.shopgiftdiv img{
+    width: 80%;
+}
+.adventuremaindiv{
+    background-image: url(images/aboutimg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.adventurediv{
+    /* width: 50%; */
+    padding: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.456);
+    /* margin-left:700px ; */
+}
+.adventurediv h1{
+    width: 45%;
+    font-size: 3.5rem;
+}
+.adventurediv p{
+    width: 50%;
+    margin: 25px 0;
+}
+.slidecarddiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px;
+}
+
+.slidecardsubdiv {
+    width: 100%;
+    background-color: #95b4d32c;
+    padding: 50px 40px;
+    border-radius: 5px;
+}
+
+.slidecardsubdiv img {
+    margin: 0 auto;
+    display: block;
+}
+
+.slidecarddiv a {
+    width: 31%;
+    text-decoration: none;
+}
+
+
+
+.slidecardsubdiv h4 {
+    margin: 10px 0;
+}
+
+
+
+.span h4 {
+    display: inline-block;
+}
+
+.span span {
+    text-decoration: line-through;
+}
+
+.cardslidebtn {
+    background-color: #4891da;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 10px;
+    top: 220px;
+    left: 30px;
+}
+.cardsliderightbtn{
+    left: 1260px;
+}
+.tbstormaindiv {
+    background-image: url(images/slide7.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tbstordiv {
+  background-color: rgba(0, 0, 0, 0.433);
+    margin: 0 auto;
+    padding: 100px;
+    text-align: center;
+    color: white;
+}
+.tbstordiv h1{
+    margin: 0;
+    font-size: 3rem;
+}
+
+.tbstorh1 {
+    font-size: 10rem !important;
+}
+.storyh1{
+    font-size: 3.5rem;
+    padding: 50px;
+    text-align: center;
+}
+.storymaindiv{
+    padding: 10px;
+    margin: 0;
+}
+.storybgdiv{
+    width: 49.5%;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.storybgdiv h1{
+    font-size: 2.8rem;
+}
+.deskdrivebgdiv {
+    background-image: url(images/ssdmain.png);
+    background-size: 200% 100%;
+    padding:100px 30px;
+}
+
+.deskdrivediv {
+    width: 55%;
+}
+
+.beastgripbgdiv {
+    background-image: url(images/card5.png);
+}
+.beastgripdiv{
+    height: 100%;
+    padding:100px 30px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 10px;
+}
+.beastgripdiv h1{
+    width: 55%;
+}
+.beastgripdiv p{
+    width: 50%;
+}
+.readymaindiv {
+    padding:100px 50px;
+    margin-top: 50px;
+    background-color: #95b4d32c;
+    background-image: url(images/card1.png);
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.readydiv{
+    width: 43%;
+}
+.readydiv p{
+   margin: 20px 0;
+}
+.readydiv h1{
+  font-size: 3rem;
+}
+.updatemaindiv{
+    padding: 120px 50px;
+    background-color: #95b4d37c;
+}
+.updatediv{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.updatediv h1{
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+}

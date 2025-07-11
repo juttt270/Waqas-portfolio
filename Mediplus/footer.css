@@ -1,0 +1,111 @@
+.footer {
+    width: 100%;
+    padding: 90px 120px;
+    padding-bottom: 50px;
+    background-color: #0e5cab;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer>div {
+    width: 24%;
+}
+
+.footer>div p {
+    width: 100%;
+    font-size: 14px;
+}
+
+.footspan {
+    font-weight: bolder;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.footaboutdiv div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footaboutdiv div i {
+    width: auto;
+    border: 1px solid white;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.footaboutdiv div i:hover {
+    background-color: white;
+    color: #1a76d1;
+}
+
+.footlinksdiv a {
+    width: 45%;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footlinksdiv a:hover {
+    transform: translateX(8px);
+    transition: all 1s;
+}
+
+.foot-icons {
+    display: inline;
+    font-size: 8px;
+    margin-right: 10px;
+}
+
+.footnewsdiv div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footnewsdiv div input {
+    width: 80%;
+    padding: 15px 10px;
+    border: 1px solid white;
+    background-color: inherit;
+    color: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.footnewsdiv div button {
+    width: 20%;
+    border: none;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #1a76d1;
+    font-size: 25px;
+}
+.footnewsdiv div button:hover{
+    color: black;
+}
+
+.footnewsdiv div input::placeholder {
+    color: white;
+}
+
+.footerbp {
+    width: 100%;
+    background-color: #1a76d1;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 14px;
+}
+
+.footerbp a {
+    color: white;
+}

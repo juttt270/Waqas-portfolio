@@ -1,0 +1,144 @@
+@media screen and (max-width:500px) {
+    .contact {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .section {
+        padding: 0px;
+    }
+
+    .glory-beauty-contact {
+        background-image: url("images/img-1");
+        background-size: 180% 100%;
+        background-position: right;
+        background-color: rgb(228, 225, 225);
+        opacity: 0.9;
+    }
+
+    .glory-beauty-p {
+        display: none;
+    }
+
+    .glory-beauty-data-div {
+        width: 200%;
+    }
+
+    .glory-h1 {
+        letter-spacing: 0.06em;
+        font-size: 28px;
+        line-height: 1.5;
+        margin-top: 50px;
+        /* display: none; */
+    }
+
+    .glory-beauty-h1 {
+        width: 40%;
+        z-index: 5;
+        margin-top: 50px;
+        /* display: none; */
+    }
+    .glory-beauty3{
+        display: none;
+    }
+
+    .glory-h1>span {
+        display: none;
+    }
+
+    .glory-img-div {
+        display: none;
+    }
+
+    .glory-a {
+        margin-bottom: 40px;
+        padding: 11px 10px;
+    }
+
+    .glory-client-data-div {
+        width: 100%;
+    }
+
+    .glory-p1 {
+        font-size: 18px;
+        line-height: 1.55556;
+    }
+
+    .glory-service-data-div {
+        width: 100%;
+    }
+
+    .glory-service-img-div {
+        width: 100%;
+    }
+
+    .glory-service-img-div>img {
+        width: 46%;
+    }
+
+    .glory-team-p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .glory-team-contact {
+        width: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .glory-team-img-div {
+        width: 90%;
+    }
+
+    .glory-team-imgs {
+        height: 100%;
+    }
+
+    .glory-team-a {
+        width: 40%;
+        margin-top: 50px;
+        padding: 11px 10px;
+    }
+
+    .glory-salon-data-div {
+        width: 100%;
+    }
+
+    .glory-salon-img-div {
+        width: 100%;
+    }
+
+    .salon-div1 {
+        /* order: 6; */
+    }
+
+    .salon-img1 {
+        order: 3;
+    }
+
+    .salon-img2 {
+        order: 5;
+        margin-top: 20px;
+    }
+
+    .glory-salon-h3 {
+        order: 4;
+    }
+
+    .salon-img3 {
+        margin-top: 20px;
+    }
+
+    .glory-salon-p {
+        width: 100%;
+        transform: translateX(0px);
+    }
+
+    .glory-salon-h3 {
+        width: 85%;
+        margin-left: 40px;
+    }
+}

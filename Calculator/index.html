@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <p>CALCULATOR</p>
+        <input type="text" class="inp" id="inp-1" disabled>
+        <div class="buttondiv">
+            <button onclick="inpfunc1()" class="btns" id="btn-1">7</button>
+            <button onclick="inpfunc2()" class="btns" id="btn-2">8</button>
+            <button onclick="inpfunc3()" class="btns" id="btn-3">9</button>
+            <button onclick="inpfunc10()" class="btns" id="btn-4"><i class="fa-solid fa-divide"></i></button>
+            <button onclick="inpfunc4()" class="btns" id="btn-5">4</button>
+            <button onclick="inpfunc5()" class="btns" id="btn-6">5</button>
+            <button onclick="inpfunc6()" class="btns" id="btn-7">6</button>
+            <button onclick="inpfunc11()" class="btns" id="btn-8">x</button>
+            <button onclick="inpfunc7()" class="btns" id="btn-9">1</button>
+            <button onclick="inpfunc8()" class="btns" id="btn-10">2</button>
+            <button onclick="inpfunc9()" class="btns" id="btn-11">3</button>
+            <button onclick="inpfunc12()" class="btns" id="btn-12">+</button>
+            <button onclick="inpfunc0()" class="btns" id="btn-13">0</button>
+            <button onclick="inpfunc14()" class="btns" id="btn-17">.</button>
+            <button onclick="calculate()" class="btns" id="btn-15">=</button>
+            <button onclick="inpfunc13()" class="btns" id="btn-16">-</button>
+            <button onclick="clearvalue()" class="btns" id="btn-14">AC</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

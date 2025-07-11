@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+  }
+
+  /* Header Styles */
+  header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+  }
+
+  /* First Navbar */
+  .top-nav {
+    background-color: #414764;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .top-nav .contact-info {
+    display: flex;
+    gap: 15px;
+  }
+  .top-nav .contact-info a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+
+  .top-nav .social-icons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+  .top-nav .social-icons a:hover {
+    color: #4891da;
+  }
+
+  /* Second Navbar */
+  .main-nav {
+    background-color: #67aaee;
+    color: white;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main-nav .menu {
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+  }
+
+  .main-nav .menu > li {
+    list-style: none;
+    position: relative;
+  }
+
+  .main-nav .menu > li > a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .main-nav .menu > li > a:hover {
+    color: #414764;
+  }
+
+  .main-nav .menu li ul {
+      width: 230px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #4891da;
+    z-index: 5;
+  }
+
+  .main-nav .menu li ul li a {
+    color: #414764;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+  }
+
+  .main-nav .menu li ul li a:hover {
+    color: #4891da;
+  }
+
+  .main-nav .menu li:hover > ul {
+    display: block;
+  }
+
+  .sublistitems{
+    left: 120px;
+    top: 0;
+  }
+
+  .main-nav .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .main-nav .search-bar select{
+    padding: 6px 10px;
+    border-radius: 5px;
+  }
+
+  .main-nav button {
+    background-color: #414764;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border: 1px solid #414764;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .main-nav button:hover {
+    background-color: white;
+    color: #414764;
+  }
+
+  @media (max-width: 768px) {
+    .main-nav .menu {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .main-nav .search-bar {
+      flex-grow: 1;
+    }
+  }

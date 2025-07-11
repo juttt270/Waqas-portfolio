@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboco, sans-serif;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.imgdiv {
+    width: 45%;
+    position: sticky;
+    top: 0;
+}
+
+.imgdiv img {
+    width: 100%;
+}
+
+.discripdiv {
+    width: 50%;
+    padding: 5px 10px;
+}
+
+.discripdiv .firstspan {
+    color: #8a8989;
+    font-size: 12px;
+}
+
+.discripdiv h1 {
+    width: 100%;
+    font-size: 30px;
+}
+
+.subicondiv {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    padding: 15px 0;
+}
+
+.subicondiv .icondiv {
+    width: 30%;
+}
+
+.subicondiv .icondiv i {
+    color: #4891da;
+}
+
+.subicondiv span {
+    text-align: center;
+    margin-left: 10px;
+}
+
+.revspan {
+    width: 35%;
+}
+
+.main .discripdiv>p {
+    font-size: 14px;
+}
+
+.main a {
+    color: black ;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.dirspan {
+    display: block;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.tbbtnsdiv {
+    width: 91%;
+    display: flex;
+    justify-content: start;
+    padding: 10px;
+}
+
+.tbbtnsdiv button {
+    width: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.tbbtnsdiv button:hover {
+    background-color: #cacaca;
+}
+
+.tbbtnsdiv button:focus {
+    background-color: black;
+    color: white;
+}
+
+.ssddivdiscrip {
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.ssddivdiscrip p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+i {
+    display: inline-block;
+}
+
+a:hover {
+    color: #4891da;
+}
+
+.ssddivdiscrip h2 {
+    display: inline-block;
+
+}
+
+.ssddivdiscrip span {
+    display: inline-block;
+    color: #8a8989;
+    text-decoration: line-through;
+}
+.addbtn button {
+    width: 72%;
+}
+
+.addbtn button:first-child {
+    width: auto;
+}
+
+
+
+/* discription style  */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.icon-item {
+    width: 30%;
+    text-align: center;
+}
+
+.icon-item i {
+    font-size: 100px;
+    color: #414764;
+}
+
+.icon-item p {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.description div {
+    width: 48%;
+}
+
+.description h2 {
+    color: #414764;
+}
+
+.description p {
+    line-height: 1.6;
+}
+
+.specs {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.specs h3 {
+    text-align: center;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table th,
+.specs-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+.featuremaindiv{
+    display: flex;
+    justify-content: space-between;
+    padding:40px 20px ;
+    margin-top: 20px;
+}
+.featuremaindiv h2{
+    width: 25%;
+    border-right: 1px solid rgb(189, 188, 188);
+}
+.featuremaindiv .featurediv{
+    width: 73%;
+    
+}
+.featuremaindiv .featurediv p{
+   margin-bottom: 20px;
+}

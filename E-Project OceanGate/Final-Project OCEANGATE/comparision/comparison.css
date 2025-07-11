@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+.container::before {
+    content: "";
+    height: 435px;
+    width: 100%;
+    background-image: url(images/img3.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+.heading {
+    background-color: #414764;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.leftcompare {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.rightcompare {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.sel:focus {
+    box-shadow: 0 0 10px blue;
+}
+
+td input {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+}
+
+td textarea {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    border: none;
+}

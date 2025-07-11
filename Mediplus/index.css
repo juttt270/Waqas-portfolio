@@ -1,0 +1,755 @@
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+body {
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ul:hover{
+    color: red;
+    text-decoration-line: underline;
+
+} */
+.dispdiv {
+    width: 50%;
+    padding: 70px;
+    position: absolute;
+    left: 70px;
+    top: 50px;
+}
+
+.dispdiv h1 {
+    font-size: 38px;
+    font-weight: 700;
+    animation: fadeInUp 1s both 1s;
+}
+
+.dispdiv span {
+    color: #1a76d1;
+}
+
+.dispdiv p {
+    margin: 30px 0;
+    animation: fadeInUp 1s both 1s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.slidebtn {
+    width: auto;
+    background-color: #1a76d1;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    padding: 13px 25px;
+    animation: fadeInUp 1s both 1s;
+}
+
+#slidebtn-2 {
+    background-color: #2C2D3F;
+}
+
+#slidebtn-1:hover {
+    background-color: #2C2D3F;
+    transition: all 1s;
+}
+
+#slidebtn-2:hover {
+    background-color: #1a76d1;
+    transition: all 1s;
+}
+
+.mainsheddiv {
+    width: 100%;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 600px;
+}
+
+.sheddiv {
+    width: 32%;
+    background-color: #1a76d1;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sheddiv:hover {
+    transform: translatey(-10px);
+    box-shadow: 0px 10px 10px #1a76d1c3;
+    transition: all .5s;
+}
+
+.sheddiv h1 {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.sheddiv p {
+    width: 100%;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.sheddiv a {
+    color: white;
+    text-decoration: none;
+}
+
+.sheddiv a:hover {
+    text-decoration: underline;
+}
+
+.shedicon {
+    font-size: 100px;
+    color: rgb(72, 145, 218);
+    text-align: left;
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+    transform: rotatey(180deg);
+}
+
+.facdiv {
+    width: 65%;
+    padding: 10px 100px;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.facdiv p {
+    width: 90%;
+    font-size: 18px;
+    margin: auto;
+}
+
+.facdiv img {
+    width: 10%;
+    margin: 20px auto;
+}
+
+.mainserdiv {
+    width: 100%;
+    padding: 10px 100px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.serdiv {
+    width: 32%;
+    text-align: center;
+}
+
+.serdiv i {
+    width: 33%;
+    height: 120px;
+    border: 1px solid rgba(92, 90, 90, 0.409);
+    padding-top: 30px;
+    border-radius: 50%;
+    color: #1a76d1;
+    font-size: 50px;
+    text-align: center;
+}
+
+.serdiv i:hover {
+    background-color: #1a76d1;
+    color: white;
+    transition: all 1s;
+}
+
+.serdiv h1 {
+    font-size: 21px;
+    margin: 30px auto;
+}
+
+.serspan {
+    width: auto;
+    color: #1a76d1;
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    font-size: 50px;
+}
+
+#serspan-2 {
+    left: 60%;
+}
+
+.maincapcdiv {
+    width: 100%;
+    height: 300px;
+    background-image: url(img/blockqoute-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+}
+
+.capcbgdiv {
+    height: 300px;
+    width: 100%;
+    background-color: #0973ddb0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.capcdiv {
+    width: 24%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+}
+
+.capcdiv i {
+    width: 27%;
+    height: 75px;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.capcdiv i:hover {
+    background-color: white;
+    color: #1a76d1;
+}
+
+.capcdiv div {
+    width: 66%;
+}
+
+.capcdiv div span {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.capcdiv div p {
+    width: 100%;
+    margin: 0;
+}
+
+.maindocimgdiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.docimgbgdiv {
+    width: 24.2%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.docimgbgdiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.docimgdiv {
+    width: 100%;
+    height: 250px;
+    background-color: #1a76d1c8;
+    border: 1px solid white;
+    position: absolute;
+    top: 250px;
+}
+
+.docimgbgdiv:hover .docimgdiv {
+    top: 0;
+}
+
+.docimgdiva {
+    text-decoration: none;
+}
+
+.docimgdiv button {
+    width: auto;
+    background-color: white;
+    color: #1a76d1;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    font-size: 18px;
+}
+
+.docimgdiv button:hover {
+    background-color: black;
+    color: white;
+}
+
+.mainvidinfdiv {
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.vidinfdiv {
+    width: 50%;
+}
+
+.vidinfdiv span {
+    color: #1a76d1;
+    font-weight: 1000;
+}
+
+.vidinfdiv div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vidinfdiv p {
+    width: 100%;
+    margin-top: 20px;
+    color: #757575;
+}
+
+.vidinfdiv div p {
+    width: 45%;
+    margin: 8px 0;
+}
+
+.vidinfdiv p i {
+    display: inline;
+    margin-right: 15px;
+    color: #1a76d1;
+}
+
+.viddiv {
+    width: 49%;
+    background-image: url(img/video-bg.jpg);
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.viddiv a i {
+    position: absolute;
+    top: 120px;
+    left: 200px;
+    font-size: 120px;
+}
+
+.overflowemerdiv {
+    width: 100%;
+    height: 490px;
+    overflow-y: auto;
+    position: relative;
+    scrollbar-width: none;
+    margin-top: 80px;
+}
+
+.mainemerdiv {
+    width: 100%;
+    height: 800px;
+    background-image: url(img/call-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.emerbgdiv {
+    width: 100%;
+    background-color: #1a76d19f;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.emerbgdiv h1,
+p {
+    width: 55%;
+    margin: 30px auto;
+}
+
+.emerbgdiv p {
+    font-size: 18px;
+}
+
+.emerdivbtn {
+    width: auto;
+    padding: 10px 22px;
+    background-color: white;
+    color: #1a76d1;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+#emerdivbtn2 {
+    background-color: transparent;
+    color: white;
+    margin-left: 20px;
+}
+
+#emerdivbtn2:hover {
+    color: #1a76d1;
+    background-color: white;
+}
+
+#emerdivbtn1:hover {
+    color: white;
+    background-color: #1a76d1;
+}
+
+
+
+.maintreatdiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 100px;
+    flex-wrap: wrap;
+}
+
+.treatdiv {
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.treatdiv i {
+    width: 12%;
+    color: #1a76d1;
+    font-size: 60px;
+}
+
+.treatdiv div {
+    width: 75%;
+}
+
+.treatdiv div h3:hover {
+    color: #1a76d1;
+}
+
+.treatdiv div p {
+    width: 90%;
+    color: #757575;
+    margin-top: 25px;
+    margin-left: 0;
+}
+
+.mainratediv {
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.ratediv {
+    width: 31%;
+    border: 1px solid rgba(0, 0, 0, 0.092);
+    padding: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.ratediv-i {
+    font-size: 60px;
+    color: #1a76d1;
+    margin: 15px;
+}
+
+.ratediv p {
+    margin-top: 0;
+}
+
+.ratediv p span {
+    font-size: 40px;
+    color: #1a76d1;
+    font-weight: 600;
+}
+
+.ratediv p sub {
+    color: rgba(0, 0, 0, 0.537);
+}
+
+.ratediv div p {
+    width: 100%;
+    text-align: left;
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.537);
+}
+
+.ratediv div p i {
+    display: inline;
+    margin-left: 80px;
+}
+
+.ratediv button {
+    background-color: #1a76d1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.ratediv button:hover {
+    background-color: #2C2D3F;
+    transition: all 1s;
+}
+
+.mainadvertdiv {
+    width: 100%;
+    padding: 10px 100px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertdiv {
+    width: 31%;
+    box-shadow: 10px 10px 10px rgba(76, 66, 66, 0.163);
+    height: 500px;
+}
+
+.advertdiv:hover {
+    border-bottom: 2px solid #1a76d1;
+}
+
+.advertdiv div {
+    padding: 30px 20px;
+}
+
+.advertdiv div span {
+    background-color: #1a76d1;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.advertdiv div h5 {
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.advertdiv div h5:hover {
+    color: #1a76d1;
+}
+
+.advertdiv div p {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.537);
+    margin: 0;
+}
+
+.maincatdiv {
+    width: 100%;
+    background-image: url(img/client-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 100px;
+}
+
+.catbgdiv {
+    background-color: #1a76d1a2;
+}
+
+.catdiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 87px;
+}
+
+.catdiv img {
+    width: 15%;
+}
+
+.maincontformdiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 120px;
+    margin-top: 50px;
+}
+
+.contformdiv {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contforminputs {
+    width: 49%;
+    margin-top: 20px;
+    padding: 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.064);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.585);
+}
+
+.contformdiv textarea {
+    width: 100%;
+}
+
+.contformdiv button {
+    width: auto;
+    height: 50px;
+    background-color: #1a76d1;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 30px;
+    color: white;
+    margin-top: 20px;
+    font-weight: 600;
+    display: inline;
+}
+
+.contformdiv button:hover {
+    background-color: #2C2D3F;
+}
+
+.contformdiv span {
+    width: auto;
+    color: rgba(0, 0, 0, 0.456);
+    margin-top: 35px;
+    margin-right: 20px;
+    display: inline;
+}
+
+.contformimgdiv {
+    width: 50%;
+}
+
+.contformimgdiv img {
+    width: 100%;
+}
+
+.mainfeeddiv {
+    width: 100%;
+    background-color: #edf2ff;
+    padding: 100px 130px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.feeddiscdiv {
+    width: 49%;
+}
+
+.feeddiscdiv p {
+    width: 80%;
+    color: rgba(0, 0, 0, 0.704);
+    margin: 0;
+}
+
+.feeduserdiv {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feeduserdiv input {
+    width: 65%;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+.feeduserdiv button {
+    width: 33%;
+    height: 60px;
+    background-color: #1a76d1;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+
+.feeduserdiv button:hover {
+    background-color: #2C2D3F;
+}
+
+/* .bodysliderleft {
+    width: 50%;
+    height: 100vh;
+    background-color: #1a76d1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    animation: bodysliderleft .5s linear 0s 1 forwards;
+}
+
+.bodysliderright {
+    width: 50%;
+    height: 100vh;
+    background-color: #1a76d1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    animation: bodysliderright .5s linear 0s 1 forwards;
+} */
+
+/* @keyframes bodysliderright {
+    0% {
+        right: 0%;
+    }
+
+    100% {
+        right: -680px;
+    }
+}
+
+@keyframes bodysliderleft {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: -680px;
+    }
+} */

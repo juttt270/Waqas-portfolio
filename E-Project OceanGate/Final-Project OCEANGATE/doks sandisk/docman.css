@@ -1,0 +1,76 @@
+/* General Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.mainssdintrodiv{
+    background-size: 35%;
+    background-image: url(mainimg.png);
+}
+/* Product Cards Layout */
+.product-cards {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Individual Product Card Styling */
+.card {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.card a{
+    text-decoration: none;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: #414764;
+    margin-top: 15px;
+}
+
+.card .price {
+    font-size: 1.2rem;
+    color: #4891ad;
+    margin-bottom: 10px;
+}
+
+.card .btn {
+    padding: 10px 20px;
+    background-color: #4891ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card .btn:hover {
+    background-color: #357f8b;
+}

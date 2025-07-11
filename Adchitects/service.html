@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service page of adchitect</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="service.css">
+
+    <style>
+        .styles_clutchSlider__pagination__fMNxL {
+            display: flex;
+            border-bottom: 2px solid #ccc;
+            width: 20% !important;
+            margin-top: 200px;
+            margin-left: 142px;
+        }
+
+        .swiper-pagination-bullet {
+            flex: 1 1;
+            border-radius: 0;
+            background: transparent;
+            width: auto;
+            height: auto;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            line-height: 1.5;
+            color: #ccc;
+            opacity: 1;
+            padding-bottom: clamp(8px, 1.125vw, 18px);
+            position: relative;
+            padding-left: 0.8rem;
+            margin: 0 !important;
+        }
+
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            width: 100%;
+        }
+
+        .swiper-pagination-bullet-active {
+            color: #111;
+        }
+
+        @media screen and (max-width:480px) {
+            .ser-custom-rev-main-div {
+                width: 100%;
+                margin: 0px;
+                padding-left: 25px;
+            }
+
+            .ser-custom-rev-p {
+                width: 100%;
+                font-size: 1.9rem;
+                line-height: 2.4rem;
+                letter-spacing: 1px;
+            }
+
+            .ser-custom-rev-sub-div {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            #ser-client-p {
+                letter-spacing: .5px;
+                margin-bottom: 0;
+            }
+
+            #ser-custom-res-div {
+                width: 59%;
+                display: flex;
+                margin-top: 5px;
+            }
+
+            .ser-custom-btn {
+                width: 100%;
+                padding: .6rem 0;
+                text-align: center;
+                font-weight: 500;
+                margin-top: 10px;
+            }
+
+            .ser-facility-main-div {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .ser-facility-sub-div {
+                width: 100%;
+            }
+
+            .ser-goal-main-div {
+                width: 100%;
+                padding: 0 10px;
+                margin-top: 50px;
+            }
+
+            .ser-goal-p {
+                width: 100%;
+                text-align: center;
+                font-weight: 600;
+                font-size: 19px;
+            }
+
+            .ser-guide-main-div {
+                width: 100%;
+                flex-direction: column;
+                margin-top: 50px;
+                padding: 0 25px;
+            }
+
+            .ser-guide-img-div {
+                width: 100%;
+            }
+
+            .ser-guide-doc-div {
+                width: 100%;
+            }
+
+            #ser-for-order-div {
+                order: 1;
+            }
+
+            #ser-for-order-div2 {
+                order: 2;
+            }
+
+            .ser-quest-answ {
+                width: 100%;
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .ser-quest-stic-div {
+                position: static;
+                width: 100%;
+            }
+
+            .ser-quest-ans-div {
+                width: 100%;
+            }
+
+            .ser-quest-stic-p {
+                letter-spacing: .5px;
+            }
+
+            .ser-quest-stic-h2 {
+                font-size: 25px;
+            }
+
+            .ser-quest-p {
+                margin-top: 0;
+            }
+
+            .ser-answ-p {
+                margin: 0;
+            }
+
+            .ser-form-main-div {
+                width: 100%;
+                flex-direction: column;
+                padding: 50px 20px;
+                margin-top: 40px;
+            }
+
+            .ser-form-doc-div {
+                width: 100%;
+            }
+
+            .ser-form-div {
+                width: 100%;
+            }
+
+            .ser-form-hp {
+                width: 100%;
+                font-size: 25px;
+                line-height: 1.5;
+            }
+
+            #ser-form-img2 {
+                left: 60px;
+            }
+
+            .ser-form-ap {
+                width: 80%;
+            }
+
+            .ser-images-main-div {
+                width: 100%;
+                height: 350px;
+                display: flex;
+                overflow: auto;
+                padding: 0 20px;
+            }
+
+            .ser-images {
+                width: 90% !important;
+                position: static;
+                margin-right: 20px;
+            }
+
+            .ser-comments-main-div {
+                width: 90%;
+                padding: 30px 20px;
+                margin: 50px auto;
+            }
+
+            .ser-comment-ldiv {
+                width: 50% !important;
+            }
+
+            .ser-guess-res-p{
+                font-size: 17.5px !important;
+                margin: 20px 0;
+            }
+
+            .ser-comment-bg-div{
+                display: flex;
+                flex-direction: column;
+            }
+
+            .ser-commnet-img-div{
+                width: 100%;
+            }
+
+            .styles_clutchSlider__pagination__fMNxL{
+                width: 90% !important;
+                margin-left: 20px;
+            }
+            .ser-commnet-img-div{
+                width: 80%;
+                margin: auto;
+                display: block;
+                margin-top: 100px;
+            }
+
+            .ser-comment-img{
+                width: 30%;
+            }
+            .ser-comment-his-div{
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                margin-top: 20px;
+            }
+            .ser-comment-his-div>p{
+                width: 60%;
+                font-size: 10px;
+                text-align: start;
+                letter-spacing: 1px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg  header">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="header-icons" href="#">
+                <img width="90%" src="images/icon.PNG" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="header-links">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 header-ul">
+                        <li class="nav-item" id="services-li">
+                            <a class="nav-link active" aria-current="page" href="#">Services</a>
+
+                            <div class="container-fluid" id="service-drop-down">
+                                <div class="row flex justify-content-evenly">
+                                    <div class="col-2">
+                                        <ul style="list-style: none;">
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links" style="font-weight: 700;opacity: 1;">
+                                                    Services
+                                                </li>
+                                            </a>
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links">Websites</li>
+                                            </a>
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links">E-commerce</li>
+                                            </a>
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links">Web Apps</li>
+                                            </a>
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links">Mobile Apps</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                    <div class="col-5">
+                                        <p style="opacity: 0.8 ;margin-top: 50px;
+                                    ">Supercharge your digital presence with our website design services.</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <img width="100%" src="images/default.webp" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Case Studies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Process</a>
+                        </li>
+                        <li class="nav-item" id="about-li">
+                            <a class="nav-link" href="#">About</a>
+
+                            <div class="container-fluid" id="about-drop-down">
+                                <div class="row flex justify-content-evenly">
+                                    <div class="col-2">
+                                        <ul style="list-style: none;">
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links" style="font-weight: 700;opacity: 1;">
+                                                    About
+                                                </li>
+                                            </a>
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links">Our Team</li>
+                                            </a>
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links">Our Culture</li>
+                                            </a>
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links">Careers</li>
+                                            </a>
+                                            <a href="#" class="service-drop-links-a">
+                                                <li class="service-drop-links">Testimonials</li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                    <div class="col-5">
+                                        <p style="opacity: 0.8 ;margin-top: 50px;
+                                ">Meet the team and learn more about the values we strongly believe in.</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <img width="100%" src="images/default (1).webp" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Insights</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-success header-btn" type="submit">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="ser-custom-rev-main-div">
+        <p class="ser-custom-rev-p">Custom web design for your company website</p>
+        <div class="ser-custom-rev-sub-div">
+            <p id="ser-client-p">
+                Our clients love working with us! </p>
+            <div id="ser-custom-res-div">
+                <img style="margin-bottom: 18px;" width="20%" src="images/logo.svg" alt="">
+                <p>4.9</p>
+                <div>
+                    <i class="fa-solid fa-star ser-custom-star-icons"></i>
+                    <i class="fa-solid fa-star ser-custom-star-icons"></i>
+                    <i class="fa-solid fa-star ser-custom-star-icons"></i>
+                    <i class="fa-solid fa-star ser-custom-star-icons"></i>
+                    <i class="fa-solid fa-star ser-custom-star-icons"></i>
+                </div>
+                <p>48 reviews</p>
+            </div>
+        </div>
+        <button class="ser-custom-btn">Request a free estimate</button>
+    </div>
+
+    <div class="ser-facility-main-div">
+        <div class="ser-facility-sub-div">
+            <p class="ser-facility-hp">Tailor-made</p>
+            <p class="ser-facility-p">Made with your brand in mind.</p>
+        </div>
+        <div class="ser-facility-sub-div">
+            <p class="ser-facility-hp">Goal-oriented</p>
+            <p class="ser-facility-p">Structured to reach business goals.</p>
+        </div>
+        <div class="ser-facility-sub-div">
+            <p class="ser-facility-hp">Easy-to-use</p>
+            <p class="ser-facility-p">Add and edit pages without coding.</p>
+        </div>
+    </div>
+
+    <div class="ser-goal-main-div">
+        <p class="ser-goal-p">Enhance your digital presence and reach your business goals! Here's how our expert team
+            helped Pathlock, Kaiterra and SBG Funding.</p>
+    </div>
+
+    <div class="d-flex justify-content-between ser-guide-main-div">
+        <div class="ser-guide-img-div">
+            <img id="ser-img1-c" width="100%" src="images/pathlock-cover.webp" alt="">
+        </div>
+        <div class="ser-guide-doc-div">
+            <p class="ser-guide-p">PATHLOCK</p>
+            <h3>Lightweight website for a cybersecurity market leader</h3>
+            <p>How did we help them?</p>
+            <ul class="ser-guide-ul">
+                <li>Lightweight and easy-to-read website with plenty of data-driven content.</li>
+                <li> Subtle and modern animations that are in-line with Pathlock's branding.</li>
+                <li> Responsive plan comparison page to help users make purchase decisions.</li>
+            </ul>
+            <div class="ser-guide-rev-div">
+                <div>
+                    <img style="margin-bottom: 18px;" src="images/logo.svg" alt="">
+                    <p>5.0</p>
+                    <div>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                    </div>
+                </div>
+                <p style="font-weight: 600; color: #111;">"This was the most well-managed <br> project I’ve been a part
+                    of"</p>
+                <p style="margin-bottom: 0;">Michael Puterbaugh</p>
+                <p style="margin-top: 5px;">CMO — Pathlock</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="d-flex justify-content-between ser-guide-main-div">
+        <div class="ser-guide-doc-div" id="ser-for-order-div2">
+            <p class="ser-guide-p">KAITERRA</p>
+            <h3>Unique website centered around sustainability</h3>
+            <p>How did we help them?</p>
+            <ul class="ser-guide-ul">
+                <li>Modern, fast, intuitive, and accessible website.</li>
+                <li> Beautiful data presentation, utilizing numerous stats and graphs.</li>
+                <li> Professionalized Kaiterra's digital brand presence.</li>
+            </ul>
+            <div class="ser-guide-rev-div">
+                <div>
+                    <img style="margin-bottom: 18px;" src="images/logo.svg" alt="">
+                    <p>5.0</p>
+                    <div>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                    </div>
+                </div>
+                <p style="font-weight: 600; color: #111;">"This was the best team we’ve ever worked with"</p>
+                <p style="margin-bottom: 0;"> Laura L.</p>
+                <p style="margin-top: 5px;">CMO — Kaiterra</p>
+            </div>
+        </div>
+        <div id="ser-for-order-div" class="ser-guide-img-div">
+            <img width="100%" height="93%" src="images/kaiterra-cover.webp" alt="">
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between ser-guide-main-div">
+        <div class="ser-guide-img-div">
+            <img width="100%" height="95%" src="images/sbgfunding-cover.webp" alt="">
+        </div>
+        <div class="ser-guide-doc-div">
+            <p class="ser-guide-p">SBG FUNDING</p>
+            <h3>Elevating a Fintech brand to boost conversion rate</h3>
+            <p>How did we help them?</p>
+            <ul class="ser-guide-ul">
+                <li>Modern platform that helped SBG Funding stand out from the crowd.</li>
+                <li>Custom-built application form that improved customer experience.</li>
+                <li>Integrated various solutions, such as optimized forms, to improve conversion rate.</li>
+            </ul>
+            <div class="ser-guide-rev-div">
+                <div>
+                    <img style="margin-bottom: 18px;" src="images/logo.svg" alt="">
+                    <p>5.0</p>
+                    <div>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                        <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                    </div>
+                </div>
+                <p style="font-weight: 600; color: #111;">"After the project, sales increased significantly"</p>
+                <p style="margin-bottom: 0;">Artur Pajkert</p>
+                <p style="margin-top: 5px;">Customer Happiness Architect — Cyber_Folks</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="ser-logo-div">
+        <img width="100%" src="images/Capture.PNG" alt="">
+    </div> -->
+
+    <div class="logo-div">
+        <div class="logo-div1">
+            <img src="images/image20.PNG" alt="">
+        </div>
+        <div class="logo-div1">
+            <img src="images/image21.PNG" alt="">
+        </div>
+        <div class="logo-div1">
+            <img src="images/image22.PNG" alt="">
+        </div>
+        <div class="logo-div1">
+            <img src="images/image23.PNG" alt="">
+        </div>
+        <div class="logo-div1">
+            <img src="images/image24.PNG" alt="">
+        </div>
+        <div class="logo-div1">
+            <img src="images/image25.PNG" alt="">
+        </div>
+        <div class="logo-div1">
+            <img src="images/image26.PNG" alt="">
+        </div>
+        <div class="logo-div1">
+            <img src="images/image27 - Copy.PNG" alt="">
+        </div>
+    </div>
+
+    <div class="ser-quest-answ">
+        <div class="ser-quest-stic-div">
+            <p class="ser-quest-stic-p">FREQUENTLY ASKED QUESTIONS</p>
+            <h2 class="ser-quest-stic-h2">Big questions need simple answers</h2>
+        </div>
+        <div class="ser-quest-ans-div">
+            <div>
+                <p class="ser-quest-p">How long does a project take?</p>
+                <p class="ser-answ-p">We can deliver a new page in two weeks. Redesigning an entire website takes around
+                    three months.</p>
+            </div>
+            <div class="mt-5">
+                <p class="ser-quest-p">How much does it cost?
+
+                </p>
+                <p class="ser-answ-p"> Full-scale website projects stars from $20K. Optimizing a few smaller parts of a
+                    website takes from a few to several dozen hours.</p>
+            </div>
+            <div class="mt-5">
+                <p class="ser-quest-p">When you will be able to start?
+
+                </p>
+                <p class="ser-answ-p">Usually, we can start within two weeks. We can adjust to your deadline and split
+                    the project into smaller parts, taking your business plans into account.</p>
+            </div>
+            <div class="mt-5">
+                <p class="ser-quest-p">What technologies do you work in?
+
+                </p>
+                <p class="ser-answ-p"> We specialize in building custom websites using WordPress and HubSpot, as well as
+                    headless solutions.</p>
+            </div>
+            <div class="mt-5">
+                <p class="ser-quest-p">Why should I choose Adchitects?
+
+                </p>
+                <p class="ser-answ-p"> Apart from great reviews, we simply love what we do. If you also believe that
+                    this is the secret sauce of a successful project, we <br> have a match!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ser-form-main-div">
+        <div class="ser-form-doc-div">
+            <p class="ser-form-p">YOU GOT THIS FAR FOR A REASON!</p>
+            <p class="ser-form-hp">Redesign and optimize your website now.</p>
+            <div class="ser-form-img-div">
+                <img id="ser-form-img1" class="ser-form-img" src="images/avatar_michal.webp" alt="">
+                <div id="ser-form-img1-doc-div">
+                    <p style="margin-bottom: 0;">Michal Matuszak</p>
+                    <p class="ser-form-man-p">SENIOR BUSINESS DEVELPOMENT REPRESENTATIVE</p>
+                </div>
+
+                <img id="ser-form-img2" class="ser-form-img" src="images/avatar_kuba.webp" alt="">
+                <div id="ser-form-img2-doc-div">
+                    <p style="margin-bottom: 0;">Kuba Luty</p>
+                    <p class="ser-form-man-p">SEO & FOUNDER
+                </div>
+
+            </div>
+            <p class="ser-form-ap">Just send us a message or
+                <a class="ser-form-a" href="#">schedule a call</a>
+                , and let's get started!
+            </p>
+        </div>
+        <div class="ser-form-div">
+            <p class="ser-form-inp-p">HOW CAN WE HELP?</p>
+            <textarea style="width: 100%; border-radius: 5px; outline: none;padding: 10px 20px;" name="" id="" cols="0"
+                rows="5"></textarea>
+            <p class="ser-form-inp-p">YOUR NAME</p>
+            <input type="text" name="" id="" class="ser-form-inp">
+            <p class="ser-form-inp-p">YOUR COMPANY EMAIL</p>
+            <input type="text" name="" id="" class="ser-form-inp">
+            <p class="ser-form-inp-p"> <input type="checkbox" name="" id=""> I Will need an NDA</p>
+            <button class="ser-from-btn">Request free Estimate</button>
+        </div>
+    </div>
+
+    <div class="ser-images-main-div">
+        <img id="ser-image1" class="ser-images" src="images/adchitects-about-desktop-2021.webp" alt="">
+        <img id="ser-image2" class="ser-images" src="images/adchitects-about-desktop-2022.webp" alt="">
+        <img id="ser-image3" class="ser-images" src="images/adchitects-about-desktop-2023.webp" alt="">
+        <img id="ser-image4" class="ser-images" src="images/adchitects-about-desktop-2024.webp" alt="">
+        <img id="ser-image5" class="ser-images" src="images/absolute5.webp" alt="">
+        <img id="ser-image6" class="ser-images" src="images/adchitects-about-desktop-202.webp" alt="">
+    </div>
+
+    <div class="ser-comments-main-div">
+        <div style="width: 23%;" class="d-flex justify-content-between ser-comment-ldiv">
+            <img style="margin-bottom: 18px;" src="images/logo.svg" alt="">
+            <p>5.0</p>
+            <div>
+                <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                <i class="fa-solid fa-star ser-guide-star-icons"></i>
+                <i class="fa-solid fa-star ser-guide-star-icons"></i>
+            </div>
+        </div>
+        <p class="ser-guess-res-p" style="font-weight: 600;font-size: 25px;">We've doubled our conversion in just one month. That's the most
+            direct metric of our success.</p>
+        <p style="margin-bottom: 0;font-weight: 600;">Nikh Khosla</p>
+        <p id="ser-comments-p">CEO - SENECA (US)</p>
+    </div>
+
+    <div class="ser-comment-bg-main-div">
+        <div class="ser-comment-bg-div">
+            <div
+                class="pagination styles_clutchSlider__pagination__fMNxL swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                <span class="swiper-pagination-bullet">1</span><span class="swiper-pagination-bullet">2</span><span
+                    class="swiper-pagination-bullet swiper-pagination-bullet-active">3</span><span
+                    class="swiper-pagination-bullet">4</span><span class="swiper-pagination-bullet">5</span>
+            </div>
+            <div class="ser-commnet-img-div">
+                <div class="ser-comment-his-div">
+                    <img class="ser-comment-img" width="60%" src="images/top-web-designers-2020.webp" alt="">
+                    <p>TOP GLOBAL UX & <br> WEB DESIGNERS</p>
+                </div>
+                <div class="ser-comment-his-div">
+                    <img class="ser-comment-img" width="80%" src="images/top-companies-global-2022.webp" alt="">
+                    <p>TOP 1000 GLOBAL <br> COMPANIES</p>
+                </div>
+                <div class="ser-comment-his-div">
+                    <img class="ser-comment-img" width="80%" src="images/top-companies-2022.webp" alt="">
+                    <p>TOP COMPANY IN <br> POLAND
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

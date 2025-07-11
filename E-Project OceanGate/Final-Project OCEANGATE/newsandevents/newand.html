@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+    <title>Newsroom Cards with Images</title>
+    <style>
+        .newsroom {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3em;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .stock-info {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #444;
+        }
+
+        .stock-info p {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #2d87f0;
+        }
+
+        /* Card Grid */
+        .news-spotlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .spotlight-item {
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .spotlight-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .spotlight-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 4px solid #2d87f0;
+        }
+
+        .spotlight-item .content {
+            padding: 25px;
+            text-align: left;
+        }
+
+        .spotlight-item h3 {
+            font-size: 1.7em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .spotlight-item p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .spotlight-item .learn-more-btn {
+            display: inline-block;
+            font-size: 1.1em;
+            padding: 12px 24px;
+            background-color: #2d87f0;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .spotlight-item .learn-more-btn:hover {
+            background-color: #236ab0;
+            transform: translateY(-2px);
+        }
+
+        /* Additional Sections */
+        .corporate-info,
+        .leadership-team,
+        .press-contacts {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .corporate-info a,
+        .leadership-team a {
+            color: #2d87f0;
+            font-weight: bold;
+            font-size: 1.3em;
+            text-decoration: none;
+        }
+
+        .corporate-info a:hover,
+        .leadership-team a:hover {
+            color: #1d66b3;
+        }
+
+        .press-contacts h3 {
+            margin-top: 20px;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .press-contacts a {
+            color: #2d87f0;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+
+        /* For Images Below Latest Corporate Information */
+        .corporate-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .corporate-images img {
+            width: 48%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .corporate-images img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .corporate-images {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .corporate-images img {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .news-spotlights {
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <header>
+        <!-- First Navbar -->
+        <div class="top-nav">
+            <div class="contact-info">
+                <span><i class="fas fa-map-marker-alt"></i> Address: 123 Ocean St.</span>
+                <a href="mailto:info@oceangate.com">
+                    <span><i class="fas fa-envelope"></i> Email: info@oceangate.com</span></a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/share/1GEH33gkdf/ "><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/waqas.munir.3114/profilecard/?igsh=ZWpqdjZ4MzVibWNs "><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/qr/COGAK4GUYIFGM1"><i class="fab fa-whatsapp"></i></a>
+                <a href="http://www.youtube.com/@waqas_munir-px4df"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <!-- Second Navbar -->
+        <div class="main-nav">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../logo.png" alt="Oceangate Logo" width="130"></a>
+            </div>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Products</a>
+                    <ul>
+                        <li>
+                            <a href="#">SSD</a>
+                            <ul class="sublistitems">
+                                <li><a href="../ssds/sandssd.html">SANDISK</a></li>
+                                <li><a href="../sumsung project/sumsingman.html">SAMSUNG</a></li>
+                                <li><a href="../intel project/intel man .html">INTEL</a></li>
+                                <li><a href="../kinstonproject/kingstonman.html">KINGSTON</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">USB Flash</a>
+                            <ul class="sublistitems">
+                                <li><a href="../../kingston usb/sandssd.html">KINGSTON</a></li>
+                                <li><a href="../../lexar usb/sandssd.html">LEXAR</a></li>
+                                <li><a href="../../samsung usb/sandssd.html">SAMSUNG</a></li>
+                                <li><a href="../../sandisk usb/usbA.html">SANDISK</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Memory Card</a>
+                            <ul class="sublistitems">
+                                <li><a href="../../memory-Cards/sandmcard.html">SANDISK</a></li>
+                                <li><a href="../../sumsung-SD-cards/summainSD-card.html">SAMSUNG</a></li>
+                                <li><a href="../../Lexar SD cards/lexarSDcardmain.html">LEXAR</a></li>
+                                <li><a href="../../kingston-SD cards/kingSDmain.html">KINGSTON</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Accessories</a>
+                            <ul class="sublistitems">
+                                <li><a href="../adpater of sandisk/manadeptercards.html">Adapters</a></li>
+                                <li><a href="../doks sandisk/docsman.html">Docks & Modules</a></li>
+                                <li><a href="../sumsing airburds/mancard.html">Earbuds</a></li>
+                                <li><a href="../card Reader/man accesories.html">Memory Card Readers</a></li>
+                                <li><a href="../phone aceeserioessandsisk/mancard.html">Phone Camera Accessories</a>
+                                </li>
+                                <li><a href="../power bank of sumsing/mancard.html">Power Bank</a></li>
+                                <li><a href="../WIRELES MOIUSE SUMSING/mancard.html">Wireless Mouse</a></li>
+                                <li><a href="../wirless cahrger sandisk/mancard.html">Wireless Chargers</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../aboutus.html">About Us</a></li>
+                <li><a href="../contactUs.html">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <select id="selectproduct">
+                    <option>Search</option>
+                    <option>SanDisk SSDs</option>
+                    <option>Sumsung SSDs</option>
+                    <option>Kingston SSDS</option>
+                    <option>Intel SSDs</option>
+                    <option>Sandisk SD Cards</option>
+                    <option>Sumsung SD Cards</option>
+                    <option>Kingston SD Cards</option>
+                    <option>Lexar SD Cards</option>
+                    <option>SanDisk USB Flash</option>
+                    <option>Sumsung USB Flash</option>
+                    <option>Kingston USB Flash</option>
+                    <option>Lexar USB Flash</option>
+                    <option>Adapters</option>
+                    <option>Docks & Modules</option>
+                    <option>Card Readers</option>
+                    <option>Wireless Mouse</option>
+                    <option>Phone Camera Accessories</option>
+                    <option>Power Bank</option>
+                    <option>Earbuds</option>
+                    <option>Wireless Chargers</option>
+                </select>
+                <button onclick="searchitems()"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+    <div class="newsroom">
+        <h1>Newsroom</h1>
+        <p>Stay up to date with company news, media resources, and connect with our team.</p>
+
+        <div class="stock-info">
+            <p>NASDAQ: <strong>$60.24</strong></p>
+        </div>
+
+        <div class="news-spotlights">
+            <div class="spotlight-item">
+                <img src="images/1st.png" alt="Press Release">
+                <div class="content">
+                    <h3>Press Release</h3>
+                    <p><strong>For the Techie to the Creator to the Gamer, New Speedy and S ...</strong></p>
+                    <p><em>ocengate announced it has released several new Flash storage solutions to help pros and
+                            consumers get ready for the holidays</em></p>
+                    <p><strong>Nov 21, 2024</strong></p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="spotlight-item">
+                <img src="images/2nd.png" alt="Media Kit">
+                <div class="content">
+                    <h3>Media Kit</h3>
+                    <p><strong>ocengate Winter Release</strong></p>
+                    <p><em>ocengate announced it has released several new Flash storage solutions to help pros and
+                            consumers get ready for the holidays. Whether looking for the perfect ...</em></p>
+                    <p><strong>Nov 20, 2024</strong></p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="spotlight-item">
+                <img src="images/4th.png" alt="Events">
+                <div class="content">
+                    <h3>Events</h3>
+                    <p><strong>The Future of Memory and Storage</strong></p>
+                    <p><em>FMS: the Future of Memory and Storage has expanded the scope of Flash Memory Summit to
+                            encompass all tiers of Memory and Storage. As a leading global independent...</em></p>
+                    <p><strong>Jul 19, 2024 - Aug 8, 2024</strong></p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="spotlight-item">
+                <img src="images/5th.png" alt="Blogs">
+                <div class="content">
+                    <h3>Blogs</h3>
+                    <p><strong>What's Your Create: Amy Guan</strong></p>
+                    <p><em>Handbag designer Amy Guan discusses how she balances the digital and the analog for her soft
+                            goods brand, Modokot.</em></p>
+                    <p><strong>Nov 7, 2023</strong></p>
+                    <a href="#" class="learn-more-btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="corporate-info">
+            <h2>Latest Corporate Information</h2>
+            <p>Get the latest filings and other information related to the operation of Western Digital.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+
+        <!-- Two images under Latest Corporate Information -->
+        <div class="corporate-images">
+            <img src="images/7th.png" alt="Corporate Image 1">
+            <img src="images/8th.png" alt="Corporate Image 2">
+        </div>
+
+        <div class="leadership-team">
+            <h2>Meet Our Executive Leadership Team</h2>
+            <p>They are committed to our innovative, collaborative, and driven global workforce; enabling our customers
+                to make smarter decisions, inspire breakthrough discoveries, and forge deeper relationships; and
+                creating value for our shareholders.</p>
+            <a href="#" class="learn-more-btn">Learn More</a>
+        </div>
+
+        <div class="press-contacts">
+            <h2>Press Contacts</h2>
+            <h3>Corporate Media Inquiries</h3>
+            <p><a href="mailto:WD.Mediainquiries@wdc.com" class="learn-more-btn">oceangate@gmail.com</a></p>
+
+            <h3>Product Media Inquiries</h3>
+            <p><a href="mailto:WD.Productmediainquiries@wdc.com" class="learn-more-btn">oceangate@gmail.com</a></p>
+        </div>
+    </div>
+    <footer>
+        <div class="ft1div">
+            <div class="ftimgdiv">
+                <a href="../index.html"> <img src="../logo.png" alt=""></a>
+            </div>
+            <p>Country/Region: <a href="#">United Kingdom</a></p>
+        </div>
+        <div class="ftmaindiv">
+            <div class="ftshopdiv ftsubdivs">
+                <p>Shopping</p>
+                <a href="../ssds/sandssd.html">Shop SSDs</a>
+                <a href="../project/SanDisk/usbA.html">Shop USB Flash</a>
+                <a href="../memory-Cards/sandmcard.html">Shop Memory Cards</a>
+                <a href="../card Reader/man accesories.html">Other Accessories</a>
+                <a href="../sumsing airburds/mancard.html">EarBuds</a>
+                <a href="../power bank of sumsing/mancard.html">Power Bank</a>
+                <a href="../WIRELES MOIUSE SUMSING/mancard.html">Wireless Mouse</a>
+                <a href="../wirless cahrger sandisk/mancard.html">Wireless Chargers</a>
+            </div>
+            <div class="ftprogdiv ftsubdivs">
+                <p>Programs</p>
+                <a href="../aboutus.html">Business Account Benefits</a>
+                <a href="../aboutus.html">Data Recovery</a>
+                <a href="../aboutus.html">OceanGate Credit</a>
+                <a href="../aboutus.html">Pro Rewards</a>
+                <a href="../partners/partners.html">Partner Programs</a>
+                <a href="../aboutus.html">Affiliate Programs</a>
+            </div>
+            <div class="ftcompdiv ftsubdivs">
+                <p>Company</p>
+                <a href="../aboutus.html">About Us</a>
+                <a href="../aboutus.html">My Account</a>
+                <a href="../signup.html">Sign Up for Email</a>
+                <a href="../leadership/leadership.html">Leadership</a>
+                <a href="../newsandevents/newand.html">News & Events</a>
+                <a href="../aboutus.html">Privact Center</a>
+                <a href="../aboutus.html">Careers</a>
+                <a href="../contactUs.html">Office Locations</a>
+                <a href="../contactUs.html">Contact Us</a>
+            </div>
+            <div class="ftsuppdiv ftsubdivs">
+                <p>Support</p>
+                <a href="../contactUs.html">Get Help</a>
+                <a href="../aboutus.html">Resource Library</a>
+                <a href="../aboutus.html">Product Security</a>
+                <p class="ftsuppdivp">+44 8081896000</p>
+                <p style="padding: 0 !important;">Monday - Friday, 9:00 - 18:00 GMT</p>
+                <div class="ftlogodiv">
+                    <a class="ftlogocol"
+                        href="https://www.instagram.com/waqas.munir.3114/profilecard/?igsh=ZWpqdjZ4MzVibWNs"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="ftlogocol"
+                        href="https://www.linkedin.com/in/waqas-kamboh-435b5a321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i
+                            class="fab fa-linkedin"></i></a>
+                    <a class="ftlogocol" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="ftlogocol" href="https://www.facebook.com/share/1GEH33gkdf/ "><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="ftlogocol" href="http://www.youtube.com/@waqas_munir-px4df"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+                <a style="margin: 0;" href="#">
+                    <img width="30%" src="../images/ft-logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="ftlp">
+            <p>© 2024 OceanGate Corporation or its affiliates. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="../searchproducts2.js"></script>
+</body>
+
+</html>

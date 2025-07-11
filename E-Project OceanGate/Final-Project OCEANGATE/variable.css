@@ -1,0 +1,42 @@
+.h1 {
+    font-size: 2.2rem;
+    font-weight: 1000;
+}.abtn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    background-color: #414764;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid #414764;
+}
+.abtn:hover {
+    background-color: white;
+    color: #414764;
+    transition: all 1s;
+}
+.p {
+    font-size: 1.2rem;
+}
+.h4 {
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: black;
+}
+.span {
+    color: #666666;
+    font-size: 1rem;
+    display: block;
+}
+.h2{
+    font-size: 2rem;
+}
+.h3{
+    font-size: 1.6rem;
+}
+.h5{
+    font-size: 1.1rem;
+}
+.h6{
+    font-size: 1rem;
+}
