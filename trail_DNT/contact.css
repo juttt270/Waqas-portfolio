@@ -52,7 +52,7 @@
       display: block;
       width: 80px;
       height: 4px;
-      background: orange;
+      background: gray;
       margin: 0.5rem auto 0;
     }
 
@@ -63,18 +63,18 @@
     }
 
     .form-control:focus {
-      border-color: orange;
+      border-color: gray;
       box-shadow: 0 0 8px rgba(255,165,0,0.4);
     }
 
     .contact-info i {
       font-size: 1.5rem;
-      color: orange;
+      color: gray;
       margin-right: 10px;
     }
 
     .btn-send {
-      background: orange;
+      background: gray;
       color: white;
       border: none;
       padding: 10px 30px;
