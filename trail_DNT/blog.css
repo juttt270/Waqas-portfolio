@@ -38,7 +38,7 @@
       display: block;
       width: 80px;
       height: 4px;
-      background: orange;
+      background: gray;
       margin: 0.5rem auto 0;
     }
 
@@ -74,7 +74,7 @@
     }
 
     .read-more {
-      color: orange;
+      color: gray;
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s;
