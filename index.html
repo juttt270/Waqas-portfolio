@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -395,4 +395,600 @@
     </script>
 </body>
 
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio - Waqas Munir</title>
+    <meta name="description" content="Personal portfolio of Waqas Munir — Web Developer, Designer, Freelancer." />
+
+    <style>
+      /* Design Tokens: 1 primary, 2 neutrals, 1 accent (total 4 colors) */
+      :root{
+        --bg: #0b1220;          /* dark neutral background */
+        --surface: #111827;     /* slightly lighter surface */
+        --text: #e5e7eb;        /* light neutral text */
+        --primary: #06b6d4;     /* cyan (brand) */
+        --accent: #f97316;      /* orange (accent) */
+        --radius: 12px;
+        --shadow: 0 8px 28px rgba(2, 6, 23, 0.45);
+        --ring: 0 0 0 3px rgba(6, 182, 212, 0.25);
+        --transition: 220ms cubic-bezier(.2,.8,.2,1);
+      }
+
+      /* Reset + base */
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji";
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      a{color:inherit;text-decoration:none}
+      img{display:block;max-width:100%;height:auto}
+
+      /* Layout helpers */
+      .container{width:100%;max-width:1100px;margin:0 auto;padding:0 1rem}
+      .section{padding:4rem 0}
+      .section-title{
+        width:max-content;
+        margin:0 auto 1.25rem;
+        padding:.25rem .75rem;
+        border-radius: .5rem;
+        border:1px solid rgba(229,231,235,.08);
+        background: rgba(17,24,39,.45);
+        backdrop-filter: blur(6px);
+        box-shadow: inset 0 0 0 1px rgba(255,255,255,.03);
+      }
+      .section-subtitle{
+        text-align:center;
+        opacity:.9;
+        margin-bottom:2rem;
+      }
+
+      /* Header */
+      .header{
+        position:sticky;top:0;z-index:50;
+        background: rgba(11,18,32,.7);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(229,231,235,.06);
+      }
+      .header-inner{
+        display:flex;align-items:center;justify-content:space-between;
+        padding:.75rem 0;
+      }
+      .brand{
+        display:flex;align-items:center;gap:.6rem;
+        font-weight:800;letter-spacing:.2px;
+      }
+      .brand-dot{
+        width:10px;height:10px;border-radius:50%;
+        background: var(--primary);
+        box-shadow: 0 0 0 6px rgba(6,182,212,.15);
+      }
+
+      /* Nav */
+      .nav{
+        display:flex;align-items:center;gap:1rem;
+      }
+      .nav a{
+        display:inline-block;
+        padding:.45rem .75rem;border-radius:.5rem;
+        color: rgba(229,231,235,.85);
+        transition: transform var(--transition), background var(--transition), color var(--transition);
+      }
+      .nav a:hover{background: rgba(6,182,212,.12); color: #ecfeff; transform: translateY(-1px)}
+      .nav a:active{transform: translateY(0)}
+      /* Mobile menu */
+      .menu-btn{
+        display:inline-flex;align-items:center;justify-content:center;
+        width:40px;height:40px;border-radius:.65rem; border:1px solid rgba(229,231,235,.08);
+        background: rgba(17,24,39,.65); color: var(--text); cursor:pointer;
+        transition: background var(--transition), transform var(--transition);
+      }
+      .menu-btn:hover{background: rgba(17,24,39,.85); transform: translateY(-1px)}
+      .menu-btn svg{width:20px;height:20px}
+      .nav-mobile{
+        display:none; flex-direction:column; gap:.5rem; padding: .75rem;
+        border-top:1px solid rgba(229,231,235,.06);
+      }
+      .nav-mobile a{
+        padding:.6rem .75rem;border-radius:.5rem;background: rgba(17,24,39,.65)
+      }
+      .nav-wrap{display:flex;align-items:center;gap:1rem}
+      @media (max-width: 900px){
+        .nav{display:none}
+        .nav-mobile{display:flex}
+      }
+
+      /* Hero */
+      .hero{
+        padding:5.5rem 0 3rem;
+      }
+      .hero-wrap{
+        display:grid; gap:1.5rem; align-items:center; justify-items:center;
+        text-align:center;
+      }
+      .avatar{
+        position:relative; width:160px; height:160px; border-radius:9999px;
+        background: linear-gradient( to bottom right, rgba(6,182,212,.2), rgba(249,115,22,.2) );
+        padding:6px;
+        box-shadow: var(--shadow);
+        animation: float 6s ease-in-out infinite;
+      }
+      .avatar img{
+        width:100%;height:100%;object-fit:cover;border-radius:9999px;
+        background:#0f172a;
+        box-shadow: inset 0 0 0 2px rgba(255,255,255,.05);
+      }
+      @keyframes float{
+        0%,100%{ transform: translateY(0) }
+        50%{ transform: translateY(-8px) }
+      }
+      .hero h1{font-size:clamp(1.6rem, 3.5vw, 2.2rem);margin:.25rem 0}
+      .hero p{opacity:.9}
+
+      .cta{
+        display:inline-block;margin-top:1rem;
+        padding:.65rem 1rem;border-radius:.75rem;font-weight:600;
+        background: var(--primary); color:#001018; border:1px solid rgba(0,0,0,.25);
+        box-shadow: 0 6px 18px rgba(6,182,212,.35);
+        transition: transform var(--transition), box-shadow var(--transition);
+      }
+      .cta:hover{ transform: translateY(-2px); box-shadow: 0 10px 26px rgba(6,182,212,.45) }
+
+      /* Cards grid */
+      .grid{
+        display:grid; gap:1rem;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+      }
+      @media (min-width: 640px){ .grid{ grid-template-columns: repeat(2, minmax(0, 1fr)) } }
+      @media (min-width: 960px){ .grid{ grid-template-columns: repeat(3, minmax(0, 1fr)) } }
+
+      .card{
+        background: var(--surface);
+        border:1px solid rgba(229,231,235,.06);
+        border-radius: var(--radius);
+        overflow:hidden;
+        box-shadow: var(--shadow);
+        transition: transform var(--transition), box-shadow var(--transition), outline var(--transition);
+        outline: 0 solid transparent;
+      }
+      .card:hover{
+        transform: translateY(-4px);
+        box-shadow: 0 16px 44px rgba(2,6,23,.6);
+        outline: 2px solid rgba(6,182,212,.25);
+      }
+      .card-media{
+        aspect-ratio: 16/10; background:#0f172a; overflow:hidden;
+      }
+      .card-media img{width:100%;height:100%;object-fit:cover}
+      .card-body{padding:1rem}
+      .card h4{margin:0 0 .5rem 0}
+      .actions{display:flex; gap:.5rem; flex-wrap:wrap}
+      .btn{
+        display:inline-block;padding:.5rem .75rem;border-radius:.6rem;
+        border:1px solid rgba(229,231,235,.12);
+        background: rgba(17,24,39,.55); color:var(--text);
+        transition: background var(--transition), transform var(--transition), color var(--transition), box-shadow var(--transition);
+      }
+      .btn:hover{ background: rgba(6,182,212,.14); color:#e6fdff; transform: translateY(-2px)}
+      .btn-primary{ background: var(--primary); color:#001018; border-color: rgba(0,0,0,.25) }
+      .btn-primary:hover{ box-shadow: 0 8px 24px rgba(6,182,212,.45) }
+
+      /* About specifics */
+      .about p{max-width:80ch;margin:0.5rem auto 2rem;opacity:.95}
+      .about .grid .card-body p{opacity:.9; font-size:.98rem}
+      .about .btn{background: rgba(6,182,212,.12)}
+
+      /* Portfolio subtitles */
+      .portfolio .section-subtitle{max-width:60ch;margin-inline:auto}
+
+      /* Contact */
+      .contact p a{color: var(--primary)}
+      .contact p a:hover{text-decoration: underline}
+
+      /* Footer */
+      .footer{
+        background:#0a0f1c;border-top:1px solid rgba(229,231,235,.06); color:#a7b0c0;
+        text-align:center;padding:1rem
+      }
+
+      /* Reveal on scroll */
+      .reveal{opacity:0; transform: translateY(16px); transition: opacity 600ms ease, transform 600ms ease}
+      .reveal.visible{opacity:1; transform: translateY(0)}
+
+      /* Reduced motion */
+      @media (prefers-reduced-motion: reduce){
+        .avatar{animation:none}
+        .card, .btn, .cta{transition:none}
+        .reveal{transition:none}
+      }
+    </style>
+  </head>
+  <body>
+     Header 
+    <header class="header" role="banner" aria-label="Main header">
+      <div class="container header-inner">
+        <a href="#hero" class="brand">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span>My Portfolio</span>
+        </a>
+
+        <div class="nav-wrap">
+          <nav class="nav" aria-label="Primary">
+            <a href="#hero">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">My Portfolio</a>
+            <a href="#contact">Contact Me</a>
+            <a href="#apps" class="btn" title="Completed apps">Apps</a>
+          </nav>
+
+          <button class="menu-btn" id="menuBtn" aria-controls="mobileNav" aria-expanded="false" aria-label="Open menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <nav id="mobileNav" class="container nav-mobile" aria-label="Mobile">
+        <a href="#hero">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">My Portfolio</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#apps">Apps</a>
+      </nav>
+    </header>
+
+     Hero 
+    <main id="hero" class="hero section" role="main">
+      <div class="container hero-wrap reveal">
+        <div class="avatar" aria-hidden="true">
+           You can replace this with your real image: images/myimag.png.jpg 
+          <img src="images/myimag.png.jpg" alt="Profile picture of Waqas Munir" />
+        </div>
+        <h1>Waqas Munir</h1>
+        <p>Web Developer | Designer | Freelancer</p>
+        <a class="cta" href="cv.docx" download>Download CV</a>
+      </div>
+    </main>
+
+     About 
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-title">About Me</div>
+        <p class="section-subtitle">I'm a passionate web developer specializing in creating amazing web experiences.</p>
+
+        <div class="grid">
+           Introduction 
+          <article class="card reveal">
+            <div class="card-body">
+              <h4>Introduction</h4>
+              <p>My name is Waqas Munir. My father name is Muhammad Munir. I am basically from Fort Abbas Punjab Pakistan. I have passed my matriculation Study from Al-Umer Public School Fort Abbas and intermediate from Government Graduate College Foer Abbas. Now I want to become a full stack developer and for achieve this continue Study in Aptech Learning Karachi.</p>
+              <div class="actions">
+                <a class="btn" href="#">See More</a>
+              </div>
+            </div>
+          </article>
+
+           Development Journey 
+          <article class="card reveal">
+            <div class="card-body">
+              <h4>Development Journey</h4>
+              <p>The journey of web development is a continuous learning experience, evolving with new technologies and trends. It starts with mastering the basics—HTML, CSS, and JavaScript—before diving into frameworks, libraries, and backend technologies. Along the way, developers encounter challenges like debugging, optimizing performance, and ensuring responsive design. With persistence and curiosity, they build projects, collaborate with others, and refine their skills.</p>
+              <div class="actions">
+                <a class="btn" href="#">See More</a>
+              </div>
+            </div>
+          </article>
+
+           Future Goals 
+          <article class="card reveal">
+            <div class="card-body">
+              <h4>My Future Goals</h4>
+              <p>My future aim is to become a skilled full-stack developer, mastering both frontend and backend technologies to build dynamic and efficient web applications. I plan to deepen my knowledge of frameworks like React and Node.js, work with databases, and understand deployment processes. My goal is to stay updated with emerging technologies and become a versatile developer capable of handling all aspects of web development.</p>
+              <div class="actions">
+                <a class="btn" href="#">See More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+     Portfolio 
+    <section id="portfolio" class="portfolio section">
+      <div class="container">
+        <div class="section-title">My Portfolio</div>
+        <p class="section-subtitle">Web Pages And Start Developer Journey With This Work</p>
+
+         First grid 
+        <div class="grid">
+          <article class="card reveal">
+            <a href="upwork/index.html" class="card-media" aria-label="Upwork Home Page">
+              <img src="images/upwork.png" alt="Upwork preview" />
+            </a>
+            <div class="card-body">
+              <h4>Upwork Home Page</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="upwork/index.html">View Page</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="Glory/home.html" class="card-media" aria-label="Home Page Of Glory Salon">
+              <img src="images/glory.png" alt="Glory Salon preview" />
+            </a>
+            <div class="card-body">
+              <h4>Home Page Of Glory Salon</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="Glory/home.html">View Page</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="time-watch/index.html" class="card-media" aria-label="Time-Watch">
+              <img src="images/watch.png" alt="Time-Watch preview" />
+            </a>
+            <div class="card-body">
+              <h4>Time-Watch</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="time-watch/index.html">View Watch</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="Adchitects/service.html" class="card-media" aria-label="Service Page Of Adchitects">
+              <img src="images/adhitects.png" alt="Adchitects Service preview" />
+            </a>
+            <div class="card-body">
+              <h4>Service Page Of Adchitects</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="Adchitects/service.html">View Page</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="Calculator/index.html" class="card-media" aria-label="Calculator">
+              <img src="images/calculator.png" alt="Calculator preview" />
+            </a>
+            <div class="card-body">
+              <h4>Calculator</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="Calculator/index.html">View Calculator</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="Color-generator/index.html" class="card-media" aria-label="Color-Generator Customly">
+              <img src="images/color-genrator.png" alt="Color Generator preview" />
+            </a>
+            <div class="card-body">
+              <h4>Color-Generator Customly</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="Color-generator/index.html">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="Sales_Dashboard/index.html" class="card-media" aria-label="Sales Dashboard">
+              <img src="images/sales.png" alt="Sales Dashboard preview" />
+            </a>
+            <div class="card-body">
+              <h4>Sales Dashboard</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="Sales_Dashboard/index.html">View Project</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="section-subtitle" style="margin-top:2rem">Finally, These Are Complete And Well Designing Projects</p>
+
+         Second grid 
+        <div class="grid">
+          <article class="card reveal">
+            <a href="E-Project OceanGate/Final-Project OCEANGATE/index.html" class="card-media" aria-label="OceanGate Project">
+              <img src="images/oceangate.png" alt="OceanGate preview" />
+            </a>
+            <div class="card-body">
+              <h4>OceanGate Project</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="E-Project OceanGate/Final-Project OCEANGATE/index.html">View Website</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="Mediplus/index.html" class="card-media" aria-label="Mediplus Project">
+              <img src="images/mediplus.png" alt="Mediplus preview" />
+            </a>
+            <div class="card-body">
+              <h4>Mediplus Project</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="Mediplus/index.html">View Website</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="fruits-Vegitables Projuct/index.html" class="card-media" aria-label="Fruit-Vegetables Project">
+              <img src="images/fruitvegetable.png" alt="Fruit & Vegetables preview" />
+            </a>
+            <div class="card-body">
+              <h4>Fruit-Vegetables Project</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="fruits-Vegitables Projuct/index.html">View Website</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="Themewagon/index.html" class="card-media" aria-label="ThemeWagon Project">
+              <img src="images/themewagon.png" alt="ThemeWagon preview" />
+            </a>
+            <div class="card-body">
+              <h4>ThemeWagon Project</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="Themewagon/index.html">View Website</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="game/home.html" class="card-media" aria-label="Tic Tac Game">
+              <img src="images/game.png" alt="Tic Tac Game preview" />
+            </a>
+            <div class="card-body">
+              <h4>Tic Tac Game</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="game/home.html">View Website</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="Energy Saver Bulb/Energy Saver Project/index.html" class="card-media" aria-label="Energy Saver Project">
+              <img src="images/energysaver.png" alt="Energy Saver preview" />
+            </a>
+            <div class="card-body">
+              <h4>Energy Saver Project</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="Energy Saver Bulb/Energy Saver Project/index.html">View Website</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <a href="trail_DNT/index.html" class="card-media" aria-label="Summer tour Project">
+              <img src="images/summer.png" alt="Summer Tour preview" />
+            </a>
+            <div class="card-body">
+              <h4>Summer tour Project</h4>
+              <div class="actions">
+                <a class="btn-primary btn" href="trail_DNT/index.html">View Website</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+     Completed Full-Stack Applications (New Section) 
+    <section id="apps" class="section">
+      <div class="container">
+        <div class="section-title">Completed Full-Stack Applications</div>
+        <p class="section-subtitle">Add your live apps here. I added a sample card with a placeholder image and link — replace them anytime.</p>
+
+        <div class="grid">
+           Sample App Card (replace image and href with your real website) 
+          <article class="card reveal">
+            <a href="https://your-live-site.example.com" target="_blank" rel="noopener noreferrer" class="card-media" aria-label="Live Full-Stack App">
+               Placeholder image: replace with your own 
+              <img src="https://picsum.photos/600/375?random=15" alt="Preview of a live full-stack application" />
+            </a>
+            <div class="card-body">
+              <h4>Awesome Storefront</h4>
+              <p style="opacity:.85">A full-stack e-commerce app with secure auth, product management, and checkout flow.</p>
+              <div class="actions">
+                <a class="btn-primary btn" href="https://your-live-site.example.com" target="_blank" rel="noopener noreferrer">Visit Live App</a>
+                <a class="btn" href="#" title="Case study (optional)">Case Study</a>
+              </div>
+            </div>
+          </article>
+
+           Duplicate this block for more apps as you go live 
+          
+          <article class="card reveal">
+            <a href="https://another-live-app.example.com" target="_blank" rel="noopener noreferrer" class="card-media" aria-label="Live App 2">
+              <img src="images/your-image-2.png" alt="Live App 2 Preview" />
+            </a>
+            <div class="card-body">
+              <h4>Project Name</h4>
+              <p>Short description...</p>
+              <div class="actions">
+                <a class="btn-primary btn" href="https://another-live-app.example.com" target="_blank" rel="noopener noreferrer">Visit Live App</a>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+      </div>
+    </section>
+
+     Contact 
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-title">Contact Me</div>
+        <div class="grid reveal" style="grid-template-columns:repeat(1,minmax(0,1fr));max-width:700px;margin-inline:auto">
+          <div class="card">
+            <div class="card-body">
+              <p>Email: <a href="mailto:waqaskamboh269@email.com">waqaskamboh269@email.com</a></p>
+              <p>Tel: <a href="tel:+923001234560">+92-300-1234560</a></p>
+              <p>LinkedIn:
+                <a href="https://www.linkedin.com/in/waqas-kamboh-435b5a321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                  Waqas Munir
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     Footer 
+    <footer class="footer" role="contentinfo">
+      &copy; 2025 Waqas Munir. All Rights Reserved.
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById('menuBtn');
+      const mobileNav = document.getElementById('mobileNav');
+      menuBtn.addEventListener('click', () => {
+        const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+        menuBtn.setAttribute('aria-expanded', String(!expanded));
+        mobileNav.style.display = expanded ? 'none' : 'flex';
+        menuBtn.innerHTML = expanded
+          ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>'
+          : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>';
+      });
+
+      // Simple reveal on scroll
+      const els = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(el => io.observe(el));
+
+      // Hero name gentle fade-in
+      document.addEventListener('DOMContentLoaded', () => {
+        const h1 = document.querySelector('.hero h1');
+        if (!h1) return;
+        h1.style.opacity = '0';
+        setTimeout(() => {
+          h1.style.transition = 'opacity 1200ms ease';
+          h1.style.opacity = '1';
+        }, 200);
+      });
+    </script>
+  </body>
 </html>
