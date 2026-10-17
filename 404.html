@@ -1,34 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page not found — Waqas Munir</title>
   <meta name="robots" content="noindex">
-  <meta name="theme-color" content="#09090b">
+  <meta name="theme-color" content="#050505">
   <link rel="icon" href="/Waqas-portfolio/favicon.svg" type="image/svg+xml">
-  <script>
-    (function () {
-      var d = document.documentElement;
-      try {
-        var t = localStorage.getItem("theme");
-        if (!t && window.matchMedia("(prefers-color-scheme: light)").matches) t = "light";
-        d.dataset.theme = t === "light" ? "light" : "dark";
-      } catch (e) {}
-    })();
-  </script>
   <link rel="stylesheet" href="/Waqas-portfolio/assets/css/style.css">
 </head>
 <body>
-  <main class="hero" style="text-align:center">
-    <div class="container">
-      <p class="eyebrow" style="justify-content:center">Error 404</p>
-      <h1 style="font-size:clamp(3rem,10vw,7rem)">Page not found</h1>
-      <p class="lead" style="margin-inline:auto">The page you're looking for doesn't exist or has moved. Let's get you back to the portfolio.</p>
-      <div class="hero-cta" style="justify-content:center">
-        <a class="btn btn--primary" href="/Waqas-portfolio/">Back to home</a>
-        <a class="btn" href="/Waqas-portfolio/#projects">Browse projects</a>
-      </div>
+  <main class="hero" style="display:grid;place-items:center;text-align:center">
+    <div class="wrap" style="position:relative;z-index:2">
+      <p class="label">Error 404</p>
+      <h1 class="metal" style="font-size:clamp(4rem,18vw,14rem);margin:1rem 0">Lost</h1>
+      <p style="color:var(--muted);max-width:28rem;margin:0 auto">This page doesn't exist or has moved. Let's get you back to Waqas Munir's portfolio.</p>
+      <p style="display:flex;gap:.6rem;justify-content:center;margin-top:2rem">
+        <a class="pill pill--lime" href="/Waqas-portfolio/">Back to home</a>
+        <a class="pill" href="/Waqas-portfolio/#work">See projects</a>
+      </p>
     </div>
   </main>
 </body>

@@ -1,77 +1,108 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Waqas Munir — Full-Stack .NET Developer | Portfolio</title>
-  <meta name="description" content="Waqas Munir is a full-stack developer in Karachi building scalable web apps with ASP.NET MVC, C#, SQL Server, PHP and JavaScript. See projects and get in touch.">
+  <title>Waqas Munir | Full Stack Developer (ASP.NET, C#, SQL Server) – Portfolio</title>
+  <meta name="description" content="Waqas Munir (Waqas Muneer) – Full Stack Developer and software engineer from Pakistan, based in Karachi. Builds web apps with ASP.NET MVC, C#, SQL Server, PHP and JavaScript. View projects and get in touch.">
+  <meta name="keywords" content="Waqas Munir, Waqas Muneer, Waqas Munir portfolio, Waqas Munir developer, Waqas Munir full stack developer, Waqas Munir software engineer, Waqas full stack developer, ASP.NET developer Karachi, full stack developer Pakistan">
   <meta name="author" content="Waqas Munir">
-  <meta name="theme-color" content="#09090b">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#050505">
   <link rel="canonical" href="https://juttt270.github.io/Waqas-portfolio/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Waqas Munir">
-  <meta property="og:title" content="Waqas Munir — Full-Stack .NET Developer">
-  <meta property="og:description" content="ASP.NET MVC, C#, SQL Server, PHP and JavaScript. Full-stack apps, dashboards and responsive websites.">
+  <meta property="og:type" content="profile">
+  <meta property="profile:first_name" content="Waqas">
+  <meta property="profile:last_name" content="Munir">
+  <meta property="og:site_name" content="Waqas Munir – Portfolio">
+  <meta property="og:title" content="Waqas Munir – Full Stack Developer">
+  <meta property="og:description" content="Portfolio of Waqas Munir (Waqas Muneer): full-stack web apps with ASP.NET MVC, C#, SQL Server, PHP and JavaScript.">
   <meta property="og:url" content="https://juttt270.github.io/Waqas-portfolio/">
   <meta property="og:image" content="https://juttt270.github.io/Waqas-portfolio/images/og-cover.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Waqas Munir — Full-Stack .NET Developer">
+  <meta property="og:image:alt" content="Waqas Munir – Full Stack Developer">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Waqas Munir — Full-Stack .NET Developer">
-  <meta name="twitter:description" content="ASP.NET MVC, C#, SQL Server, PHP and JavaScript. Full-stack apps, dashboards and responsive websites.">
+  <meta name="twitter:title" content="Waqas Munir – Full Stack Developer">
+  <meta name="twitter:description" content="Portfolio of Waqas Munir (Waqas Muneer): full-stack web apps with ASP.NET MVC, C#, SQL Server, PHP and JavaScript.">
   <meta name="twitter:image" content="https://juttt270.github.io/Waqas-portfolio/images/og-cover.jpg">
 
   <script>
-    /* Runs before first paint: avoids a theme flash and marks JS as available. */
+    /* Before first paint: mark JS and decide whether the hero intro plays. */
     (function () {
       var d = document.documentElement;
       d.classList.add("js");
-      try {
-        var t = localStorage.getItem("theme");
-        if (!t && window.matchMedia("(prefers-color-scheme: light)").matches) t = "light";
-        d.dataset.theme = t === "light" ? "light" : "dark";
-      } catch (e) { d.dataset.theme = "dark"; }
+      if (!location.hash && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        d.classList.add("intro");
+        setTimeout(function () { d.classList.remove("intro"); }, 6000); /* never stay hidden */
+      }
     })();
   </script>
 
   <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/space-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="images/waqas-cutout.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/style.css">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Waqas Munir",
-    "jobTitle": "Full-Stack Developer",
-    "url": "https://juttt270.github.io/Waqas-portfolio/",
-    "image": "https://juttt270.github.io/Waqas-portfolio/images/myself.webp",
-    "email": "mailto:waqaskamboh269@gmail.com",
-    "worksFor": { "@type": "Organization", "name": "Dreams Network & Technology Pvt Ltd" },
-    "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressCountry": "PK" },
-    "knowsAbout": ["ASP.NET MVC", "C#", "SQL Server", "JavaScript", "PHP", "Laravel", "React", "Tailwind CSS"],
-    "sameAs": ["https://github.com/juttt270", "https://www.linkedin.com/in/waqas-munir-435b5a321"]
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://juttt270.github.io/Waqas-portfolio/#person",
+        "name": "Waqas Munir",
+        "alternateName": ["Waqas Muneer", "Waqas Munir Developer", "Waqas Munir Full Stack Developer"],
+        "givenName": "Waqas",
+        "familyName": "Munir",
+        "jobTitle": "Full Stack Developer",
+        "description": "Full Stack Developer and software engineer from Pakistan building web applications with ASP.NET MVC, C#, SQL Server, PHP and JavaScript.",
+        "url": "https://juttt270.github.io/Waqas-portfolio/",
+        "image": "https://juttt270.github.io/Waqas-portfolio/images/myself.webp",
+        "email": "mailto:waqaskamboh269@gmail.com",
+        "nationality": { "@type": "Country", "name": "Pakistan" },
+        "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressRegion": "Sindh", "addressCountry": "PK" },
+        "worksFor": { "@type": "Organization", "name": "Dreams Network & Technology Pvt Ltd" },
+        "alumniOf": [
+          { "@type": "EducationalOrganization", "name": "Aptech Learning SFC, Karachi" },
+          { "@type": "CollegeOrUniversity", "name": "Virtual University of Pakistan" }
+        ],
+        "knowsAbout": ["Full Stack Development", "ASP.NET MVC", "C#", "SQL Server", "Entity Framework", "JavaScript", "TypeScript", "React", "PHP", "Laravel", "MySQL", "Tailwind CSS", "IIS Deployment"],
+        "sameAs": ["https://github.com/juttt270", "https://www.linkedin.com/in/waqas-munir-435b5a321"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://juttt270.github.io/Waqas-portfolio/#website",
+        "name": "Waqas Munir – Portfolio",
+        "alternateName": ["Waqas Munir Portfolio", "Waqas Muneer Portfolio"],
+        "url": "https://juttt270.github.io/Waqas-portfolio/",
+        "author": { "@id": "https://juttt270.github.io/Waqas-portfolio/#person" },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "ProfilePage",
+        "name": "Waqas Munir – Full Stack Developer Portfolio",
+        "url": "https://juttt270.github.io/Waqas-portfolio/",
+        "mainEntity": { "@id": "https://juttt270.github.io/Waqas-portfolio/#person" },
+        "isPartOf": { "@id": "https://juttt270.github.io/Waqas-portfolio/#website" }
+      }
+    ]
   }
   </script>
 </head>
 
 <body>
-  <!-- Icon sprite -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <defs>
-      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M7 7h10v10"/></symbol>
-      <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
-      <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></symbol>
-      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-up-right" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M13 5l7 7-7 7"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v13M6 12l6 6 6-6M5 21h14"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M21 7l-9 6-9-6"/></symbol>
       <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
-      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol>
-      <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
-      <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
-      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
-      <symbol id="i-send" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
       <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></symbol>
       <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></symbol>
     </defs>
@@ -80,579 +111,522 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="header">
-    <div class="header-bar">
-      <a class="brand" href="#hero">
-        <span class="brand-mark" aria-hidden="true">WM</span>
-        <span>Waqas Munir</span>
-      </a>
+    <div class="wrap header-bar">
+      <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">WM</span><span>Waqas Munir</span></a>
       <nav class="nav" aria-label="Primary">
-        <a href="#hero">Home</a>
-        <a href="#apps">Full-Stack</a>
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div class="header-actions">
-        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
-          <svg class="ico i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
-          <svg class="ico i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
-        </button>
-        <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
-          <svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg>
-        </button>
-      </div>
+      <a class="pill pill--lime" href="#contact">Let's talk</a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><svg class="ico" aria-hidden="true"><use href="#i-menu"/></svg></button>
     </div>
     <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
-      <a href="#hero">Home</a>
-      <a href="#apps">Full-Stack</a>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#projects">More projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main id="main">
     <!-- ================= HERO ================= -->
-    <section class="hero" id="hero" aria-labelledby="hero-title">
-      <div class="container">
-        <div class="hero-grid">
-          <div>
-            <p class="status">Software Developer at Dreams Network · Open to freelance</p>
-            <h1 id="hero-title">Waqas Munir <span class="role">Full-Stack .NET Developer</span></h1>
-            <p class="lead">I design, build and deploy scalable web applications — ASP.NET MVC, C# and SQL Server on the back end, clean responsive interfaces on the front.</p>
-            <div class="hero-cta">
-              <a class="btn btn--primary" href="#apps">View my work <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              <a class="btn" href="Waqas_Munir_CV.pdf" download>Download CV <svg class="ico" aria-hidden="true"><use href="#i-download"/></svg></a>
-            </div>
-            <div class="socials">
-              <a class="icon-btn" href="https://github.com/juttt270" target="_blank" rel="noopener" aria-label="GitHub profile"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a>
-              <a class="icon-btn" href="https://www.linkedin.com/in/waqas-munir-435b5a321" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
-              <a class="icon-btn" href="mailto:waqaskamboh269@gmail.com" aria-label="Email Waqas"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a>
-            </div>
-          </div>
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <p class="hero-word metal" aria-hidden="true">PORTFOLIO</p>
+      <script>if (document.documentElement.classList.contains("intro")) document.currentScript.previousElementSibling.textContent = "WAQAS";</script>
 
-          <div class="portrait">
-            <div class="portrait-frame">
-              <img src="images/myself.webp" width="900" height="1200" alt="Portrait of Waqas Munir in a navy suit" fetchpriority="high" decoding="async">
-            </div>
-            <div class="portrait-chip portrait-chip--a">
-              <div>ASP.NET MVC · C#<small>Primary stack</small></div>
-            </div>
-            <div class="portrait-chip portrait-chip--b">
-              <div>Karachi, PK<small>Pakistan</small></div>
-            </div>
-          </div>
-        </div>
+      <div class="hero-person">
+        <img src="images/waqas-cutout.webp" width="900" height="1200" alt="Waqas Munir, Full Stack Developer" fetchpriority="high" decoding="async">
+      </div>
 
-        <div class="stats">
-          <div class="card stat"><strong>1+</strong><span>Years of professional experience</span></div>
-          <div class="card stat"><strong>16</strong><span>Projects in this portfolio</span></div>
-          <div class="card stat"><strong>2</strong><span>Full-stack apps built end to end</span></div>
-        </div>
+      <div class="hero-title" data-intro>
+        <h1 id="hero-heading">
+          <span class="label">Waqas Munir · Karachi, Pakistan</span>
+          <span class="hero-role">Full-Stack <span class="serif">Developer</span></span>
+        </h1>
+        <a class="hero-cv" href="Waqas_Munir_CV.pdf" download>Download CV <svg class="ico" aria-hidden="true"><use href="#i-down"/></svg></a>
+      </div>
+
+      <div class="hero-cta" data-intro>
+        <a class="round" href="#contact" aria-label="Go to contact"><svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+        <a class="pill" href="#contact">Contact</a>
       </div>
     </section>
 
-    <div class="marquee" aria-label="Technologies I work with">
-      <div class="marquee-track">
-        <ul>
-          <li>C#</li><li>ASP.NET MVC</li><li>SQL Server</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Node.js</li><li>PHP</li><li>Laravel</li><li>MySQL</li><li>MongoDB</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Entity Framework</li><li>IIS</li><li>Git</li>
-        </ul>
-        <ul aria-hidden="true">
-          <li>C#</li><li>ASP.NET MVC</li><li>SQL Server</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Node.js</li><li>PHP</li><li>Laravel</li><li>MySQL</li><li>MongoDB</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Entity Framework</li><li>IIS</li><li>Git</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- ================= FEATURED FULL-STACK APPS ================= -->
-    <section class="section" id="apps" aria-labelledby="apps-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Featured work</p>
-          <h2 id="apps-title">Full-stack applications</h2>
-          <p>Complete products with a database, server-side logic and a real user interface — built from scratch.</p>
-        </div>
-
-        <div class="apps">
-          <article class="card app reveal">
-            <a class="app-media" href="https://github.com/juttt270/Skill_Swap" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-              <img src="images/skillswap.webp" width="1000" height="529" alt="" loading="lazy" decoding="async">
-            </a>
-            <div class="app-body">
-              <span class="tag">Core PHP · MySQL</span>
-              <h3>Skill Swap</h3>
-              <p>A skill-exchange platform where members offer and learn skills from each other. Built from scratch in Core PHP and MySQL, with separate user and admin panels.</p>
-              <ul class="chips" aria-label="Technologies">
-                <li class="chip">Core PHP</li><li class="chip">MySQL</li><li class="chip">JavaScript</li><li class="chip">Admin panel</li>
-              </ul>
-              <div class="app-actions">
-                <a class="btn btn--primary btn--sm" href="https://github.com/juttt270/Skill_Swap" target="_blank" rel="noopener">View source <svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a>
-                <span class="note">Live demo is being redeployed</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="card app reveal">
-            <a class="app-media" href="https://egreetingcards.somee.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-              <img src="images/egreeting.webp" width="1000" height="454" alt="" loading="lazy" decoding="async">
-            </a>
-            <div class="app-body">
-              <span class="tag">ASP.NET MVC · C#</span>
-              <h3>eGreetingCards</h3>
-              <p>A platform to create, customise and share e-greeting cards, built on the ASP.NET MVC architecture. The repository includes the database scripts and project documentation.</p>
-              <ul class="chips" aria-label="Technologies">
-                <li class="chip">ASP.NET MVC</li><li class="chip">C#</li><li class="chip">HTML / CSS</li><li class="chip">JavaScript</li>
-              </ul>
-              <div class="app-actions">
-                <a class="btn btn--primary btn--sm" href="https://egreetingcards.somee.com/" target="_blank" rel="noopener">Live demo <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                <a class="btn btn--sm" href="https://github.com/juttt270/E-GreetingCards" target="_blank" rel="noopener">Source code</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ================= ABOUT ================= -->
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">About</p>
-          <h2 id="about-title">A developer who owns features end to end.</h2>
-        </div>
-
-        <div class="bento">
-          <div class="card span-8 prose reveal">
-            <h3>Hi, I'm Waqas</h3>
-            <p>I'm a full-stack developer from Fort Abbas, Punjab, now based in <strong>Karachi</strong>. At <strong>Dreams Network &amp; Technology</strong> I build and maintain ASP.NET MVC applications — from SQL Server stored procedures and Entity Framework to responsive front ends and production releases on IIS.</p>
-            <p>Alongside work I'm completing the <strong>ACCP AI Diploma in Software Engineering</strong> at Aptech (4th semester) and starting a BSCS at Virtual University. I enjoy turning messy business requirements into software that's fast, reliable and easy to maintain.</p>
-          </div>
-
-          <div class="card span-4 reveal">
-            <h3>What I do</h3>
-            <ul class="check-list">
-              <li>Full-stack web applications</li>
-              <li>Database design &amp; stored procedures</li>
-              <li>ERP systems &amp; IoT dashboards</li>
-              <li>IIS deployment &amp; maintenance</li>
-            </ul>
-          </div>
-
-          <div class="card span-7 reveal">
-            <h3>Education</h3>
-            <ul class="timeline">
-              <li><span class="when">2026 – Present</span><h4>BSCS — Computer Science</h4><p class="meta">Virtual University of Pakistan (VU)</p></li>
-              <li><span class="when">2024 – Present</span><h4>ACCP AI Diploma in Software Engineering</h4><p class="meta">Aptech Learning SFC, Karachi</p></li>
-              <li><span class="when">2021 – 2023</span><h4>Intermediate (FSc Pre-Engineering)</h4><p class="meta">Government Graduate College, Fort Abbas</p></li>
-              <li><span class="when">2019 – 2021</span><h4>Matriculation (Science)</h4><p class="meta">Al-Umer Public School, Fort Abbas</p></li>
-            </ul>
-          </div>
-
-          <div class="card span-5 reveal">
-            <h3>At a glance</h3>
-            <dl class="fact-list">
-              <div><dt>Role</dt><dd>Software Developer</dd></div>
-              <div><dt>Company</dt><dd>Dreams Network &amp; Technology, Karachi</dd></div>
-              <div><dt>Focus</dt><dd>ASP.NET MVC · SQL Server · REST APIs</dd></div>
-              <div><dt>Languages</dt><dd>C#, JavaScript, TypeScript, PHP</dd></div>
-            </dl>
+    <!-- ================= ABOUT / INTRO ================= -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="wrap about-grid">
+        <figure class="about-portrait" data-reveal>
+          <img data-reveal-item src="images/myself.webp" width="900" height="1200" alt="Portrait of Waqas Munir" loading="lazy" decoding="async">
+        </figure>
+        <div>
+          <h2 class="about-intro metal" id="about-heading" data-rise>Intro</h2>
+          <div class="about-card">
+            <h3>Hey, I'm Waqas Munir.</h3>
+            <p class="reading">A full-stack developer from Pakistan who loves building fast, scalable web applications. At Dreams Network &amp; Technology in Karachi I turn real business requirements into production software with <strong>ASP.NET MVC</strong>, <strong>C#</strong> and <strong>SQL Server</strong> — from database design and stored procedures to clean, responsive front ends with <strong>JavaScript</strong>, <strong>Tailwind</strong> and <strong>React</strong>. I'm completing the ACCP AI Diploma at Aptech and a BSCS at Virtual University, and I always aim for clean code and a great user experience.</p>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ================= SKILLS ================= -->
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Skills</p>
-          <h2 id="skills-title">Technologies I work with</h2>
-          <p>Grouped by what they're used for, from daily tools to concepts I rely on.</p>
-        </div>
-
-        <div class="bento">
-          <div class="card span-4 reveal"><span class="skill-index">01</span><h3>Programming languages</h3>
-            <ul class="chips"><li class="chip">C#</li><li class="chip">JavaScript</li><li class="chip">TypeScript</li><li class="chip">PHP</li></ul></div>
-          <div class="card span-4 reveal"><span class="skill-index">02</span><h3>Front-end</h3>
-            <ul class="chips"><li class="chip">HTML5</li><li class="chip">CSS3</li><li class="chip">Bootstrap</li><li class="chip">Tailwind CSS</li><li class="chip">React.js</li></ul></div>
-          <div class="card span-4 reveal"><span class="skill-index">03</span><h3>Back-end</h3>
-            <ul class="chips"><li class="chip">ASP.NET MVC</li><li class="chip">ASP.NET Web Forms</li><li class="chip">Node.js</li><li class="chip">Laravel</li></ul></div>
-          <div class="card span-4 reveal"><span class="skill-index">04</span><h3>Databases</h3>
-            <ul class="chips"><li class="chip">SQL Server</li><li class="chip">MySQL</li><li class="chip">MongoDB</li></ul></div>
-          <div class="card span-4 reveal"><span class="skill-index">05</span><h3>CMS &amp; e-commerce</h3>
-            <ul class="chips"><li class="chip">WordPress</li><li class="chip">Shopify</li></ul></div>
-          <div class="card span-4 reveal"><span class="skill-index">06</span><h3>Tools</h3>
-            <ul class="chips"><li class="chip">Git</li><li class="chip">GitHub</li><li class="chip">IIS deployment</li><li class="chip">REST APIs</li><li class="chip">Entity Framework</li></ul></div>
-          <div class="card reveal"><span class="skill-index">07</span><h3>Core concepts</h3>
-            <ul class="chips"><li class="chip">Data structures &amp; algorithms</li><li class="chip">OOP</li><li class="chip">MVC architecture</li><li class="chip">Database design</li><li class="chip">CRUD operations</li></ul></div>
-        </div>
+      <div class="ticker" aria-label="Technologies I work with">
+        <div class="ticker-row to-right"><ul><li class="cat">Frontend</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>React.js</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Responsive Design</li><li class="cat">Frontend</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>React.js</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Responsive Design</li></ul><ul aria-hidden="true"><li class="cat">Frontend</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>React.js</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Responsive Design</li><li class="cat">Frontend</li><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>React.js</li><li>Tailwind CSS</li><li>Bootstrap</li><li>Responsive Design</li></ul></div>
+        <div class="ticker-row "><ul><li class="cat">Backend</li><li>C#</li><li>ASP.NET MVC</li><li>ASP.NET Web Forms</li><li>Entity Framework</li><li>Node.js</li><li>PHP</li><li>Laravel</li><li>REST APIs</li><li class="cat">Backend</li><li>C#</li><li>ASP.NET MVC</li><li>ASP.NET Web Forms</li><li>Entity Framework</li><li>Node.js</li><li>PHP</li><li>Laravel</li><li>REST APIs</li></ul><ul aria-hidden="true"><li class="cat">Backend</li><li>C#</li><li>ASP.NET MVC</li><li>ASP.NET Web Forms</li><li>Entity Framework</li><li>Node.js</li><li>PHP</li><li>Laravel</li><li>REST APIs</li><li class="cat">Backend</li><li>C#</li><li>ASP.NET MVC</li><li>ASP.NET Web Forms</li><li>Entity Framework</li><li>Node.js</li><li>PHP</li><li>Laravel</li><li>REST APIs</li></ul></div>
+        <div class="ticker-row to-right"><ul><li class="cat">Data &amp; CMS</li><li>SQL Server</li><li>MySQL</li><li>MongoDB</li><li>Stored Procedures</li><li>Database Design</li><li>WordPress</li><li>Shopify</li><li class="cat">Data &amp; CMS</li><li>SQL Server</li><li>MySQL</li><li>MongoDB</li><li>Stored Procedures</li><li>Database Design</li><li>WordPress</li><li>Shopify</li></ul><ul aria-hidden="true"><li class="cat">Data &amp; CMS</li><li>SQL Server</li><li>MySQL</li><li>MongoDB</li><li>Stored Procedures</li><li>Database Design</li><li>WordPress</li><li>Shopify</li><li class="cat">Data &amp; CMS</li><li>SQL Server</li><li>MySQL</li><li>MongoDB</li><li>Stored Procedures</li><li>Database Design</li><li>WordPress</li><li>Shopify</li></ul></div>
+        <div class="ticker-row "><ul><li class="cat">Tools</li><li>Git</li><li>GitHub</li><li>IIS Deployment</li><li>OOP</li><li>MVC Architecture</li><li>Data Structures &amp; Algorithms</li><li>CRUD Operations</li><li class="cat">Tools</li><li>Git</li><li>GitHub</li><li>IIS Deployment</li><li>OOP</li><li>MVC Architecture</li><li>Data Structures &amp; Algorithms</li><li>CRUD Operations</li></ul><ul aria-hidden="true"><li class="cat">Tools</li><li>Git</li><li>GitHub</li><li>IIS Deployment</li><li>OOP</li><li>MVC Architecture</li><li>Data Structures &amp; Algorithms</li><li>CRUD Operations</li><li class="cat">Tools</li><li>Git</li><li>GitHub</li><li>IIS Deployment</li><li>OOP</li><li>MVC Architecture</li><li>Data Structures &amp; Algorithms</li><li>CRUD Operations</li></ul></div>
       </div>
     </section>
 
     <!-- ================= EXPERIENCE ================= -->
-    <section class="section" id="experience" aria-labelledby="experience-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <p class="eyebrow">Experience</p>
-          <h2 id="experience-title">Where I've worked</h2>
+    <section class="experience" id="experience" aria-labelledby="xp-heading">
+      <div class="wrap">
+        <h2 class="sec-title metal" id="xp-heading" data-rise>Career <span class="serif">so far</span></h2>
+
+        <div class="xp-list">
+          <article class="xp" data-reveal>
+            <p class="xp-when" data-reveal-item>Jan 2026 – Present</p>
+            <div data-reveal-item>
+              <h3>Software Developer</h3>
+              <p class="org">Dreams Network &amp; Technology Pvt Ltd · Karachi</p>
+            </div>
+            <ul data-reveal-item>
+              <li>Full-stack development of web applications with ASP.NET MVC, C#, SQL Server, JavaScript and Tailwind.</li>
+              <li>Owned database design, optimisation, stored procedures and data integrity across multiple projects.</li>
+              <li>Deployed and maintained applications on Microsoft IIS, handling production releases and environment setup.</li>
+              <li>Worked with cross-functional teams to gather requirements and ship business-critical features.</li>
+            </ul>
+          </article>
+          <article class="xp" data-reveal>
+            <p class="xp-when" data-reveal-item>Jul 2025 – Jan 2026</p>
+            <div data-reveal-item>
+              <h3>Software Developer Intern</h3>
+              <p class="org">Dreams Network &amp; Technology Pvt Ltd · Karachi</p>
+            </div>
+            <ul data-reveal-item>
+              <li>Rebuilt the company's most complex ERP system from scratch, replacing an obsolete version with a faster, scalable one.</li>
+              <li>Connected IoT devices and built energy and sensor-monitoring dashboards.</li>
+              <li>Analysed requirements, debugged issues and improved performance with senior developers.</li>
+            </ul>
+          </article>
         </div>
 
-        <div class="jobs">
-          <article class="card job reveal">
-            <div>
-              <p class="job-when">Jan 2026 – Present</p>
+        <h2 class="edu-title metal" data-rise>Learning <span class="serif">path</span></h2>
+        <div class="xp-list edu-list">
+          <article class="xp" data-reveal><p class="xp-when" data-reveal-item>2026 – Present</p><div data-reveal-item><h3>BS Computer Science</h3><p class="org">Virtual University of Pakistan</p></div></article>
+          <article class="xp" data-reveal><p class="xp-when" data-reveal-item>2024 – Present</p><div data-reveal-item><h3>ACCP AI Diploma in Software Engineering</h3><p class="org">Aptech Learning SFC, Karachi</p></div></article>
+          <article class="xp" data-reveal><p class="xp-when" data-reveal-item>2021 – 2023</p><div data-reveal-item><h3>Intermediate (FSc Pre-Engineering)</h3><p class="org">Government Graduate College, Fort Abbas</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services" id="services" aria-labelledby="svc-heading">
+      <div class="wrap">
+        <h2 class="services-title metal" id="svc-heading" data-drop>What I<br>can do</h2>
+      </div>
+      <div class="svc-list">
+        <div class="svc">
+          <button class="svc-head" type="button" id="svc-h1" aria-expanded="false" aria-controls="svc-1">
+            <span class="svc-num">01</span><span class="svc-name">Full-Stack Web Development</span><svg class="svc-arrow ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <div class="svc-body" id="svc-1" role="region" aria-labelledby="svc-h1"><div>
+            <div class="svc-inner">
+              <ul class="svc-caps"><li>Business web apps with ASP.NET MVC &amp; C#</li><li>Secure CRUD modules, authentication &amp; admin panels</li><li>Clean, scalable MVC architecture</li><li>Responsive front ends with JavaScript &amp; Tailwind</li><li>Deployment to IIS and production support</li></ul>
+              <div><p class="svc-desc">I build complete, production-ready web applications — database, server-side logic and responsive interface — with ASP.NET MVC, C# and SQL Server, from planning and architecture to deployment.</p><a class="svc-cta" href="#work">View projects</a></div>
             </div>
-            <div>
-              <h3>Software Developer</h3>
-              <p class="company">Dreams Network &amp; Technology Pvt Ltd · Karachi, Pakistan</p>
-              <ul class="check-list">
-                <li>Full-stack development of web applications with ASP.NET MVC, C#, SQL Server, JavaScript, HTML, CSS and Tailwind.</li>
-                <li>Built and enhanced front-end and back-end modules with a scalable architecture and solid performance.</li>
-                <li>Owned database design, optimisation, stored procedures and data integrity across multiple projects.</li>
-                <li>Deployed, configured and maintained applications on Microsoft IIS, handling production releases and environment setup.</li>
-                <li>Worked with cross-functional teams to gather requirements, ship features and resolve issues on business-critical systems.</li>
-              </ul>
-              <ul class="chips" aria-label="Technologies"><li class="chip">ASP.NET MVC</li><li class="chip">C#</li><li class="chip">SQL Server</li><li class="chip">IIS</li><li class="chip">Tailwind</li></ul>
+          </div></div>
+        </div>
+        <div class="svc">
+          <button class="svc-head" type="button" id="svc-h2" aria-expanded="false" aria-controls="svc-2">
+            <span class="svc-num">02</span><span class="svc-name">Frontend Development</span><svg class="svc-arrow ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <div class="svc-body" id="svc-2" role="region" aria-labelledby="svc-h2"><div>
+            <div class="svc-inner">
+              <ul class="svc-caps"><li>HTML5 &amp; CSS3</li><li>JavaScript &amp; TypeScript</li><li>React.js</li><li>Tailwind CSS &amp; Bootstrap</li><li>Responsive, accessible layouts</li><li>Pixel-accurate builds from designs</li></ul>
+              <div><p class="svc-desc">I create fast, responsive and visually polished interfaces that work smoothly across desktop, tablet and mobile.</p></div>
+            </div>
+          </div></div>
+        </div>
+        <div class="svc">
+          <button class="svc-head" type="button" id="svc-h3" aria-expanded="false" aria-controls="svc-3">
+            <span class="svc-num">03</span><span class="svc-name">Backend &amp; API Development</span><svg class="svc-arrow ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <div class="svc-body" id="svc-3" role="region" aria-labelledby="svc-h3"><div>
+            <div class="svc-inner">
+              <ul class="svc-caps"><li>C# &amp; ASP.NET MVC</li><li>ASP.NET Web Forms</li><li>Entity Framework</li><li>Node.js</li><li>PHP &amp; Laravel</li><li>REST APIs</li></ul>
+              <div><p class="svc-desc">I develop secure, well-structured server-side code and APIs that power real business workflows.</p></div>
+            </div>
+          </div></div>
+        </div>
+        <div class="svc">
+          <button class="svc-head" type="button" id="svc-h4" aria-expanded="false" aria-controls="svc-4">
+            <span class="svc-num">04</span><span class="svc-name">Database Design</span><svg class="svc-arrow ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <div class="svc-body" id="svc-4" role="region" aria-labelledby="svc-h4"><div>
+            <div class="svc-inner">
+              <ul class="svc-caps"><li>SQL Server</li><li>MySQL</li><li>MongoDB</li><li>Stored procedures</li><li>Query optimisation</li><li>Data integrity</li></ul>
+              <div><p class="svc-desc">I design reliable databases and write the queries and procedures that keep applications fast and data consistent.</p></div>
+            </div>
+          </div></div>
+        </div>
+        <div class="svc">
+          <button class="svc-head" type="button" id="svc-h5" aria-expanded="false" aria-controls="svc-5">
+            <span class="svc-num">05</span><span class="svc-name">ERP &amp; IoT Dashboards</span><svg class="svc-arrow ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <div class="svc-body" id="svc-5" role="region" aria-labelledby="svc-h5"><div>
+            <div class="svc-inner">
+              <ul class="svc-caps"><li>ERP modernisation</li><li>Energy &amp; sensor monitoring</li><li>IoT device integration</li><li>Real-time charts &amp; dashboards</li><li>Business reporting</li></ul>
+              <div><p class="svc-desc">I modernise business systems and build monitoring dashboards — including a from-scratch ERP rebuild and energy &amp; sensor dashboards for connected IoT devices.</p></div>
+            </div>
+          </div></div>
+        </div>
+        <div class="svc">
+          <button class="svc-head" type="button" id="svc-h6" aria-expanded="false" aria-controls="svc-6">
+            <span class="svc-num">06</span><span class="svc-name">CMS, Deployment &amp; Tools</span><svg class="svc-arrow ico" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </button>
+          <div class="svc-body" id="svc-6" role="region" aria-labelledby="svc-h6"><div>
+            <div class="svc-inner">
+              <ul class="svc-caps"><li>WordPress</li><li>Shopify</li><li>IIS deployment</li><li>Git &amp; GitHub</li><li>Environment setup</li><li>Production releases</li></ul>
+              <div><p class="svc-desc">I set up content-managed sites and handle the tooling around a project — version control, releases and server configuration.</p></div>
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SELECTED WORK ================= -->
+    <section class="work" id="work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div class="work-head">
+          <h2 class="work-title metal" id="work-heading" data-rise>Selected <span class="serif">work</span></h2>
+          <div class="work-intro">
+            <p>Full-stack applications and multi-page websites I designed and built — from the database to the interface. Every project is live or open source on GitHub.</p>
+            <a class="pill pill--lime" href="#projects">More projects <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+          </div>
+        </div>
+
+        <div class="work-list">
+          <article class="project" data-reveal>
+            <a class="project-media" href="https://github.com/juttt270/Skill_Swap" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" data-reveal-item>
+              <img src="images/skillswap.webp" width="1000" height="529" alt="Skill Swap skill-exchange platform built by Waqas Munir" loading="lazy" decoding="async">
+            </a>
+            <div class="project-text">
+              <p class="project-num" data-reveal-item>01</p>
+              <h3 data-reveal-item>Skill <span class="serif">swap</span><br>Exchange platform</h3>
+              <p class="project-stack" data-reveal-item>Core PHP · MySQL · JavaScript · Admin panel</p>
+              <p class="project-desc" data-reveal-item>A skill-exchange platform where members offer and learn skills from each other. Built from scratch in Core PHP and MySQL, with separate user and admin panels.</p>
+              <div class="project-actions" data-reveal-item><a class="pill" href="https://github.com/juttt270/Skill_Swap" target="_blank" rel="noopener noreferrer">GitHub <svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a><span class="project-note">Live demo is being redeployed</span></div>
             </div>
           </article>
-
-          <article class="card job reveal">
-            <div>
-              <p class="job-when">Jul 2025 – Jan 2026</p>
+          <article class="project" data-reveal>
+            <a class="project-media" href="https://egreetingcards.somee.com/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" data-reveal-item>
+              <img src="images/egreeting.webp" width="1000" height="454" alt="eGreetingCards ASP.NET MVC application by Waqas Munir" loading="lazy" decoding="async">
+            </a>
+            <div class="project-text">
+              <p class="project-num" data-reveal-item>02</p>
+              <h3 data-reveal-item>eGreeting <span class="serif">cards</span><br>ASP.NET MVC app</h3>
+              <p class="project-stack" data-reveal-item>ASP.NET MVC · C# · HTML / CSS · JavaScript</p>
+              <p class="project-desc" data-reveal-item>A platform to create, customise and share e-greeting cards, built on the ASP.NET MVC architecture. The repository includes the database scripts and project documentation.</p>
+              <div class="project-actions" data-reveal-item><a class="pill pill--lime" href="https://egreetingcards.somee.com/" target="_blank" rel="noopener">Live Demo <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a><a class="pill" href="https://github.com/juttt270/E-GreetingCards" target="_blank" rel="noopener noreferrer">GitHub <svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a></div>
             </div>
-            <div>
-              <h3>Software Developer Intern</h3>
-              <p class="company">Dreams Network &amp; Technology Pvt Ltd · Karachi, Pakistan</p>
-              <ul class="check-list">
-                <li>Rebuilt the company's most complex ERP system from scratch, replacing an obsolete version with a faster, better-optimised and scalable one.</li>
-                <li>Connected IoT devices and created energy and sensor-monitoring dashboards, learning multiple device protocols hands-on.</li>
-                <li>Worked with senior developers to analyse business requirements, debug issues and improve system performance.</li>
-              </ul>
-              <ul class="chips" aria-label="Focus areas"><li class="chip">ERP</li><li class="chip">IoT</li><li class="chip">Dashboards</li></ul>
+          </article>
+          <article class="project" data-reveal>
+            <a class="project-media" href="E-Project%20OceanGate/Final-Project%20OCEANGATE/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" data-reveal-item>
+              <img src="images/oceangate.webp" width="1000" height="458" alt="OceanGate storage-products website by Waqas Munir" loading="lazy" decoding="async">
+            </a>
+            <div class="project-text">
+              <p class="project-num" data-reveal-item>03</p>
+              <h3 data-reveal-item>OceanGate <span class="serif">store</span><br>Multi-page e-project</h3>
+              <p class="project-stack" data-reveal-item>HTML · CSS · Bootstrap · JavaScript</p>
+              <p class="project-desc" data-reveal-item>An e-commerce style website for storage products — SD cards, SSDs, USB drives and accessories — with hundreds of product, comparison and detail pages. Built as an Aptech e-project.</p>
+              <div class="project-actions" data-reveal-item><a class="pill pill--lime" href="E-Project%20OceanGate/Final-Project%20OCEANGATE/index.html" target="_blank" rel="noopener">Live Demo <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a><a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/E-Project%20OceanGate" target="_blank" rel="noopener noreferrer">GitHub <svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a></div>
+            </div>
+          </article>
+          <article class="project" data-reveal>
+            <a class="project-media" href="Sales_Dashboard/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" data-reveal-item>
+              <img src="images/sales.webp" width="1000" height="453" alt="Sales analytics dashboard by Waqas Munir" loading="lazy" decoding="async">
+            </a>
+            <div class="project-text">
+              <p class="project-num" data-reveal-item>04</p>
+              <h3 data-reveal-item>Sales <span class="serif">analytics</span><br>Dashboard</h3>
+              <p class="project-stack" data-reveal-item>JavaScript · Chart.js · Bootstrap</p>
+              <p class="project-desc" data-reveal-item>An analytics dashboard that visualises orders, customers, products and reviews with interactive Chart.js charts in a responsive Bootstrap layout.</p>
+              <div class="project-actions" data-reveal-item><a class="pill pill--lime" href="Sales_Dashboard/index.html" target="_blank" rel="noopener">Live Demo <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a><a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Sales_Dashboard" target="_blank" rel="noopener noreferrer">GitHub <svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a></div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ================= 3D PROJECT GALLERY ================= -->
-    <section class="gallery" id="projects" aria-labelledby="projects-title" style="--n:14">
+    <!-- ================= MORE PROJECTS (3D gallery) ================= -->
+    <section class="gallery" id="projects" aria-labelledby="projects-heading" style="--n:12">
       <div class="gallery-pin">
-        <div class="container gallery-head">
-          <div class="section-head">
-            <p class="eyebrow">More projects</p>
-            <h2 id="projects-title">All projects</h2>
-            <p>Websites, dashboards and mini-apps from my learning journey — every one has a live demo and source code.</p>
+        <div class="wrap gallery-head">
+          <div>
+            <h2 class="metal" id="projects-heading">More <span class="serif">projects</span></h2>
+            <p>Websites, dashboards and mini-apps from my learning journey — each with a live demo and source code.</p>
           </div>
-          <p class="g-counter" aria-hidden="true"><span class="g-count">01</span><small> / <span class="g-total">14</span></small></p>
+          <p class="g-counter" aria-hidden="true"><span class="g-count">01</span><small> / <span class="g-total">12</span></small></p>
         </div>
-
-        <div class="gallery-stage" tabindex="0" role="group" aria-roledescription="carousel" aria-label="Projects. Use the left and right arrow keys to browse.">
+        <div class="gallery-stage" tabindex="0" role="group" aria-roledescription="carousel" aria-label="More projects. Use the left and right arrow keys to browse.">
           <ol class="gallery-track">
             <li class="g-card">
               <article>
-                <a class="g-media" href="upwork/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/upwork.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="upwork/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/upwork.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">Landing page</span>
                   <h3>Upwork Landing Page</h3>
                   <p>Front-end recreation of the Upwork home page: responsive layout, Font Awesome icons and JavaScript interactions.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="upwork/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Upwork Landing Page</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/upwork" target="_blank" rel="noopener">Source<span class="sr-only"> code of Upwork Landing Page</span></a>
+                    <a class="pill pill--lime" href="upwork/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Upwork Landing Page</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/upwork" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Upwork Landing Page</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="Glory/home.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/glory.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="Glory/home.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/glory.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">Landing page</span>
                   <h3>Glory Salon</h3>
                   <p>Responsive salon home page built with Bootstrap and a custom media-query stylesheet.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="Glory/home.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Glory Salon</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Glory" target="_blank" rel="noopener">Source<span class="sr-only"> code of Glory Salon</span></a>
+                    <a class="pill pill--lime" href="Glory/home.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Glory Salon</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Glory" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Glory Salon</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="time-watch/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/watch.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="time-watch/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/watch.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">JavaScript</span>
                   <h3>Time-Watch</h3>
                   <p>A live digital watch built with vanilla JavaScript.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="time-watch/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Time-Watch</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/time-watch" target="_blank" rel="noopener">Source<span class="sr-only"> code of Time-Watch</span></a>
+                    <a class="pill pill--lime" href="time-watch/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Time-Watch</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/time-watch" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Time-Watch</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="Adchitects/service.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/adchitects.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="Adchitects/service.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/adchitects.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">Agency page</span>
                   <h3>Adchitects Service Page</h3>
                   <p>Agency services page recreation using Bootstrap and Swiper sliders.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="Adchitects/service.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Adchitects Service Page</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Adchitects" target="_blank" rel="noopener">Source<span class="sr-only"> code of Adchitects Service Page</span></a>
+                    <a class="pill pill--lime" href="Adchitects/service.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Adchitects Service Page</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Adchitects" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Adchitects Service Page</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="Calculator/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/calculator.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="Calculator/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/calculator.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">JavaScript</span>
                   <h3>Calculator</h3>
                   <p>Fully working calculator with a clean interface and JavaScript logic.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="Calculator/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Calculator</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Calculator" target="_blank" rel="noopener">Source<span class="sr-only"> code of Calculator</span></a>
+                    <a class="pill pill--lime" href="Calculator/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Calculator</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Calculator" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Calculator</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="Color-generator/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/color-generator.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="Color-generator/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/color-generator.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">JavaScript</span>
                   <h3>Color Generator</h3>
                   <p>Colour tool with left and right colour controls, written in plain HTML, CSS and JavaScript.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="Color-generator/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Color Generator</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Color-generator" target="_blank" rel="noopener">Source<span class="sr-only"> code of Color Generator</span></a>
+                    <a class="pill pill--lime" href="Color-generator/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Color Generator</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Color-generator" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Color Generator</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="Sales_Dashboard/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/sales.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
-                <div class="g-body">
-                  <span class="tag">Dashboard</span>
-                  <h3>Sales Dashboard</h3>
-                  <p>Analytics dashboard with Chart.js charts and a Bootstrap layout.</p>
-                  <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="Sales_Dashboard/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Sales Dashboard</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Sales_Dashboard" target="_blank" rel="noopener">Source<span class="sr-only"> code of Sales Dashboard</span></a>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="g-card">
-              <article>
-                <a class="g-media" href="E-Project%20OceanGate/Final-Project%20OCEANGATE/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/oceangate.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
-                <div class="g-body">
-                  <span class="tag">Multi-page · Aptech e-project</span>
-                  <h3>OceanGate</h3>
-                  <p>E-commerce style site for storage products (SD cards, SSDs, USB drives) with product pages and project documentation.</p>
-                  <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="E-Project%20OceanGate/Final-Project%20OCEANGATE/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of OceanGate</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/E-Project%20OceanGate" target="_blank" rel="noopener">Source<span class="sr-only"> code of OceanGate</span></a>
-                  </div>
-                </div>
-              </article>
-            </li>
-            <li class="g-card">
-              <article>
-                <a class="g-media" href="Mediplus/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/mediplus.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="Mediplus/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/mediplus.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">Multi-page</span>
                   <h3>Mediplus</h3>
                   <p>Healthcare website with home, blog, contact and portfolio-detail pages plus a custom 404.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="Mediplus/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Mediplus</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Mediplus" target="_blank" rel="noopener">Source<span class="sr-only"> code of Mediplus</span></a>
+                    <a class="pill pill--lime" href="Mediplus/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Mediplus</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Mediplus" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Mediplus</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="fruits-Vegitables%20Projuct/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/fruit-vegetables.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="fruits-Vegitables%20Projuct/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/fruit-vegetables.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">Store UI</span>
                   <h3>Fruitables</h3>
                   <p>Organic fruit and vegetable store front-end built with Bootstrap.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="fruits-Vegitables%20Projuct/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Fruitables</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/fruits-Vegitables%20Projuct" target="_blank" rel="noopener">Source<span class="sr-only"> code of Fruitables</span></a>
+                    <a class="pill pill--lime" href="fruits-Vegitables%20Projuct/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Fruitables</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/fruits-Vegitables%20Projuct" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Fruitables</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="Themewagon/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/themewagon.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="Themewagon/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/themewagon.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">Agency site</span>
                   <h3>HighTech IT Agency</h3>
                   <p>IT solutions agency website with multiple sections, built on Bootstrap.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="Themewagon/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of HighTech IT Agency</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Themewagon" target="_blank" rel="noopener">Source<span class="sr-only"> code of HighTech IT Agency</span></a>
+                    <a class="pill pill--lime" href="Themewagon/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of HighTech IT Agency</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Themewagon" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of HighTech IT Agency</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="game/home.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/game.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="game/home.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/game.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">Game</span>
                   <h3>Tic-Tac-Toe</h3>
                   <p>Browser Tic-Tac-Toe game with a home screen and JavaScript game logic.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="game/home.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Tic-Tac-Toe</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/game" target="_blank" rel="noopener">Source<span class="sr-only"> code of Tic-Tac-Toe</span></a>
+                    <a class="pill pill--lime" href="game/home.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Tic-Tac-Toe</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/game" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Tic-Tac-Toe</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="Energy%20Saver%20Bulb/Energy%20Saver%20Project/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/energy-saver.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="Energy%20Saver%20Bulb/Energy%20Saver%20Project/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/energy-saver.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">Multi-page</span>
                   <h3>Energy Saver</h3>
                   <p>Product website for LED, CFL and halogen energy-saving bulbs with separate product pages.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="Energy%20Saver%20Bulb/Energy%20Saver%20Project/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Energy Saver</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Energy%20Saver%20Bulb" target="_blank" rel="noopener">Source<span class="sr-only"> code of Energy Saver</span></a>
+                    <a class="pill pill--lime" href="Energy%20Saver%20Bulb/Energy%20Saver%20Project/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Energy Saver</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/Energy%20Saver%20Bulb" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Energy Saver</span></a>
                   </div>
                 </div>
               </article>
             </li>
             <li class="g-card">
               <article>
-                <a class="g-media" href="trail_DNT/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false">
-                  <img src="images/summer-tour.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false">
-                </a>
+                <a class="g-media" href="trail_DNT/index.html" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" draggable="false"><img src="images/summer-tour.webp" width="1000" height="450" alt="" loading="lazy" decoding="async" draggable="false"></a>
                 <div class="g-body">
                   <span class="tag">Travel site</span>
                   <h3>Summer Tour</h3>
                   <p>Travel website with Explore, About, Blog and Contact pages, built with Bootstrap.</p>
                   <div class="g-actions">
-                    <a class="btn btn--primary btn--sm" href="trail_DNT/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Summer Tour</span><svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                    <a class="btn btn--sm" href="https://github.com/juttt270/Waqas-portfolio/tree/main/trail_DNT" target="_blank" rel="noopener">Source<span class="sr-only"> code of Summer Tour</span></a>
+                    <a class="pill pill--lime" href="trail_DNT/index.html" target="_blank" rel="noopener">Live demo<span class="sr-only"> of Summer Tour</span> <svg class="ico" aria-hidden="true"><use href="#i-up-right"/></svg></a>
+                    <a class="pill" href="https://github.com/juttt270/Waqas-portfolio/tree/main/trail_DNT" target="_blank" rel="noopener">GitHub<span class="sr-only"> source of Summer Tour</span></a>
                   </div>
                 </div>
               </article>
             </li>
           </ol>
         </div>
-
-        <div class="container g-ui">
-          <button class="icon-btn g-prev" type="button" aria-label="Previous project"><svg class="ico" aria-hidden="true"><use href="#i-left"/></svg></button>
+        <div class="wrap g-ui">
+          <button class="round g-prev" type="button" aria-label="Previous project"><svg class="ico" aria-hidden="true"><use href="#i-left"/></svg></button>
           <div class="g-progress" aria-hidden="true"><i></i></div>
           <p class="g-hint">Scroll, drag or use ← → keys</p>
-          <button class="icon-btn g-next" type="button" aria-label="Next project"><svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
+          <button class="round g-next" type="button" aria-label="Next project"><svg class="ico" aria-hidden="true"><use href="#i-right"/></svg></button>
         </div>
       </div>
     </section>
 
     <!-- ================= CONTACT ================= -->
-    <section class="section" id="contact" aria-labelledby="contact-title">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="reveal">
-            <p class="eyebrow">Contact</p>
-            <h2 id="contact-title" style="font-size:clamp(2rem,4.6vw,3.25rem)">Let's build something together.</h2>
-            <p style="margin-top:1rem;color:var(--muted);font-size:1.05rem">Have a project, a role or just a question? Send a message — it lands straight in my inbox and I reply personally.</p>
-
-            <div class="contact-list">
-              <a class="contact-item" href="mailto:waqaskamboh269@gmail.com">
-                <span class="contact-ico"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></span>
-                <span><small>Email</small>waqaskamboh269@gmail.com</span>
-              </a>
-              <a class="contact-item" href="tel:+923215464270">
-                <span class="contact-ico"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg></span>
-                <span><small>Phone</small>+92 321 5464270</span>
-              </a>
-              <a class="contact-item" href="https://www.linkedin.com/in/waqas-munir-435b5a321" target="_blank" rel="noopener">
-                <span class="contact-ico"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
-                <span><small>LinkedIn</small>Waqas Munir</span>
-              </a>
-              <a class="contact-item" href="https://github.com/juttt270" target="_blank" rel="noopener">
-                <span class="contact-ico"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></span>
-                <span><small>GitHub</small>juttt270</span>
-              </a>
+    <section class="contact" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 class="contact-title metal" id="contact-heading" data-rise>Get in<br>touch</h2>
+          <dl class="contact-info" data-reveal>
+            <div data-reveal-item><dt>Email:</dt><dd><a href="mailto:waqaskamboh269@gmail.com">waqaskamboh269@gmail.com</a></dd></div>
+            <div data-reveal-item><dt>Phone:</dt><dd><a href="tel:+923215464270">+92 321 5464270</a></dd></div>
+            <div data-reveal-item><dt>Location:</dt><dd>Karachi, Pakistan</dd></div>
+          </dl>
+          <div class="follow">
+            <p>Follow me</p>
+            <div class="socials">
+              <a class="round" href="https://github.com/juttt270" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a>
+              <a class="round" href="https://www.linkedin.com/in/waqas-munir-435b5a321" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+              <a class="round" href="mailto:waqaskamboh269@gmail.com" aria-label="Email"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a>
             </div>
           </div>
-
-          <div class="card reveal">
-            <h3 style="margin-bottom:1.25rem">Send a message</h3>
-            <form class="form" id="contact-form" action="https://formsubmit.co/waqaskamboh269@gmail.com" method="POST">
-              <input type="hidden" name="_subject" value="New message from your portfolio">
-              <input type="hidden" name="_template" value="table">
-              <input type="hidden" name="_captcha" value="false">
-              <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
-
-              <div class="field">
-                <label for="f-name">Your name</label>
-                <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Jane Doe" required>
-              </div>
-              <div class="field">
-                <label for="f-email">Your email</label>
-                <input id="f-email" name="email" type="email" autocomplete="email" placeholder="jane@company.com" required>
-              </div>
-              <div class="field">
-                <label for="f-message">Message</label>
-                <textarea id="f-message" name="message" placeholder="Tell me about your project or role…" required></textarea>
-              </div>
-              <button class="btn btn--primary" type="submit"><span class="btn-label">Send message</span> <svg class="ico" aria-hidden="true"><use href="#i-send"/></svg></button>
-              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-            </form>
-          </div>
         </div>
+
+        <form class="form" id="contact-form" action="https://formsubmit.co/waqaskamboh269@gmail.com" method="POST" data-reveal>
+          <input type="hidden" name="_subject" value="New message from your portfolio">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
+          <div class="form-row" data-reveal-item>
+            <div class="field"><label for="f-name">Your Name</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="Your full name" required></div>
+            <div class="field"><label for="f-email">Email address</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="Your email address" required></div>
+          </div>
+          <div class="form-row" data-reveal-item>
+            <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="Your phone number"></div>
+            <div class="field"><label for="f-subject">Subject</label><input id="f-subject" name="subject" type="text" placeholder="Subject"></div>
+          </div>
+          <div class="field" data-reveal-item><label for="f-message">Message</label><textarea id="f-message" name="message" rows="5" placeholder="Write something...." required></textarea></div>
+          <div data-reveal-item>
+            <button class="submit" type="submit"><span class="spinner" aria-hidden="true"></span><span class="btn-label">Send Message</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year">2026</span> Waqas Munir. All rights reserved.</p>
-      <p>Hand-built with HTML, CSS &amp; vanilla JavaScript · <a href="#hero">Back to top ↑</a></p>
+    <div class="wrap footer-top">
+      <div>
+        <p class="label">Connect with me</p>
+        <a class="footer-mail" href="mailto:waqaskamboh269@gmail.com">waqaskamboh269@gmail.com</a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Projects</a><a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-cta">
+        <h2>Let's build something</h2>
+        <p>Open for freelance opportunities and collaborations.</p>
+        <a class="pill pill--white" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="footer-social">
+        <a href="https://github.com/juttt270" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/waqas-munir-435b5a321" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:waqaskamboh269@gmail.com">Email</a>
+        <a href="Waqas_Munir_CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+    <p class="footer-brand" aria-hidden="true">WAQAS MUNIR</p>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span class="year">2026</span> Waqas Munir (Waqas Muneer). All rights reserved.</p>
+      <p>Full Stack Developer · Karachi, Pakistan · <a href="#home">Back to top ↑</a></p>
     </div>
   </footer>
 
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>
