@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Waqas Munir</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#09090b">
+  <link rel="icon" href="/Waqas-portfolio/favicon.svg" type="image/svg+xml">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t && window.matchMedia("(prefers-color-scheme: light)").matches) t = "light";
+        d.dataset.theme = t === "light" ? "light" : "dark";
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="/Waqas-portfolio/assets/css/style.css">
+</head>
+<body>
+  <main class="hero" style="text-align:center">
+    <div class="container">
+      <p class="eyebrow" style="justify-content:center">Error 404</p>
+      <h1 style="font-size:clamp(3rem,10vw,7rem)">Page not found</h1>
+      <p class="lead" style="margin-inline:auto">The page you're looking for doesn't exist or has moved. Let's get you back to the portfolio.</p>
+      <div class="hero-cta" style="justify-content:center">
+        <a class="btn btn--primary" href="/Waqas-portfolio/">Back to home</a>
+        <a class="btn" href="/Waqas-portfolio/#projects">Browse projects</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
